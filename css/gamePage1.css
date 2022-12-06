@@ -4,26 +4,53 @@ html {
   background-image: linear-gradient(#052a19, #506d56);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(12, 8rem);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  grid-template-areas:
-    "back back . . . . . . . . ."
-    "back back . . . . header header header header ."
-    ". gameCover gameCover gameCover gameCover gameCover rating rating rating rating ."
-    ". gameCover gameCover gameCover gameCover gameCover . . . . ."
-    ". gameCover gameCover gameCover gameCover gameCover . . . . ."
-    ". gameCover gameCover gameCover gameCover gameCover . . . . ."
-    ". . . . . . . . . . ."
-    ". . . . . . . . . . ."
-    ". . . . . . . . . . ."
-    ". . . . . . . . . . ."
-    ". . . . . . . . . . ."
-    ". . . . . . . . . . ."
-    ". . . . . . . . . . .";
+@media screen and (min-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 8rem);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+      "back back . . . . . . . ."
+      "back back . . . . header header header ."
+      ". gameCover gameCover gameCover gameCover . rating rating rating ."
+      ". gameCover gameCover gameCover gameCover . text1 text1 text1 ."
+      ". gameCover gameCover gameCover gameCover . text2 text2 text2 ."
+      ". gameCover gameCover gameCover gameCover . rectangle rectangle rectangle ."
+      ". gameCover gameCover gameCover gameCover . button button button ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . .";
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(13, 8rem);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+      "back back . . . . . . . ."
+      "back back header header header header header header . ."
+      ". rating rating rating rating rating rating rating rating ."
+      ". gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover ."
+      ". gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover ."
+      ". gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover ."
+      ". gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover ."
+      ". gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover ."
+      ". text1 text1 text1 text1 text1 text1 text1 text1 ."
+      ". text2 text2 text2 text2 text2 text2 text2 text2 ."
+      ". rectangle rectangle rectangle rectangle rectangle rectangle rectangle rectangle ."
+      ". button button button button button button button button ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . .";
+  }
 }
 
 #arrowLeft {
@@ -32,25 +59,115 @@ html {
   place-self: center center;
 }
 
+#arrowLeft:hover {
+  filter: drop-shadow(3px 3px 4px #000000);
+}
+
 #arrowLeftimg {
   height: 50%;
 }
 
 #gameCover {
   grid-area: gameCover;
+  place-self: center center;
   height: 100%;
-  width: 26rem;
+  width: 450px;
+  box-shadow: 1px 1px 4px #031b10;
 }
 
 #header {
   grid-area: header;
-  place-self: center center;
+  place-self: end center;
   color: white;
   font-size: 28pt;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
 }
 
 #rating {
-  grid-area: header;
+  grid-area: rating;
   height: 20%;
+  place-self: start center;
+}
+
+#header2 {
+  color: rgb(78, 78, 78);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  grid-area: rating;
+  place-self: center center;
+  margin-bottom: 2rem;
+}
+
+#genre {
+  color: rgb(78, 78, 78);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  grid-area: rating;
+  place-self: center center;
+  margin-bottom: -2rem;
+}
+
+#adoretext {
+  color: rgb(255, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  grid-area: text1;
+  place-self: start center;
+}
+
+#adoretext2 {
+  color: rgb(255, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  grid-area: text2;
+  place-self: start center;
+}
+
+#buynow {
+  grid-area: button;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px #031b10;
+  width: 250px;
+  height: 60px;
+  background-color: #8bd3b3;
+  place-self: center center;
+}
+
+#buynow:hover {
+  background-color: #219e66;
+  color: white;
+  cursor: pointer;
+}
+
+#rectangle {
+  width: 400px;
+  height: 20px;
+  background-color: #052a19;
+  grid-area: rectangle;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
   place-self: end center;
+}
+
+#price {
+  grid-area: circle;
+  margin-top: 280px;
+  margin-left: -162px;
+}
+
+@media screen and (max-width: 1000px) {
+  #adoretext {
+    place-self: end center;
+  }
+
+  #gameCover {
+    height: 80%;
+    width: 400px;
+  }
 }
