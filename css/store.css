@@ -9,7 +9,7 @@ html {
   .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(17, 8rem);
+    grid-template-rows: repeat(19, 8rem);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
@@ -29,7 +29,9 @@ html {
       ". game9 game9 game10 game10 . . . . ."
       ". game9 game9 game10 game10 . . . . ."
       ". game9 game9 game10 game10 . . . . ."
-      ". . . . . . . . . .";
+      ". . . . . . . . . ."
+      "footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer";
   }
 }
 /* Grid Area between 1100 - 1900 px */
@@ -37,7 +39,7 @@ html {
   .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(21, 8rem);
+    grid-template-rows: repeat(23, 8rem);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
@@ -61,7 +63,9 @@ html {
       ". game10 game10 . . . . . . ."
       ". game10 game10 . . . . . . ."
       ". game10 game10 . . . . . . ."
-      ". . . . . . . . . .";
+      ". . . . . . . . . ."
+      "footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer";
   }
 }
 
@@ -70,7 +74,7 @@ html {
   .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(25, 8rem);
+    grid-template-rows: repeat(27, 8rem);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
@@ -98,7 +102,9 @@ html {
       ". game9 game9 game9 game9 game10 game10 game10 game10 ."
       ". game9 game9 game9 game9 game10 game10 game10 game10 ."
       ". game9 game9 game9 game9 game10 game10 game10 game10 ."
-      ". . . . . . . . . .";
+      ". . . . . . . . . ."
+      "footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer";
   }
 }
 
@@ -106,7 +112,7 @@ html {
   .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(45, 8rem);
+    grid-template-rows: repeat(47, 8rem);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
@@ -154,7 +160,9 @@ html {
       ". game10 game10 game10 game10 game10 game10 game10 game10 ."
       ". game10 game10 game10 game10 game10 game10 game10 game10 ."
       ". game10 game10 game10 game10 game10 game10 game10 game10 ."
-      ". . . . . . . . . .";
+      ". . . . . . . . . ."
+      "footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer";
   }
 }
 
@@ -717,6 +725,37 @@ html {
   max-width: 100%;
 }
 
+#footerLine {
+  grid-area: footer;
+  place-self: start start;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+#logoFooter {
+  grid-area: footer;
+  height: 80px;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+#copyright {
+  grid-area: footer;
+  place-self: end start;
+  height: 80px;
+  margin-left: 1rem;
+  font-size: 16pt;
+}
+
+#contactFooter {
+  grid-area: footer;
+  place-self: end end;
+  height: 80px;
+  margin-right: 1rem;
+  font-size: 16pt;
+}
+
 /* Content changes when width is 1100px or less */
 @media screen and (max-width: 1100px) {
   #game8Sale {
@@ -789,5 +828,11 @@ html {
 @media screen and (max-width: 800px) {
   #gamesHeader {
     place-self: center center;
+  }
+  #contactFooter {
+    font-size: 12pt;
+  }
+  #copyright {
+    font-size: 12pt;
   }
 }
