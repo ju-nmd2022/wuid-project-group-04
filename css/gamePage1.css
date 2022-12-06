@@ -108,7 +108,7 @@ html {
   margin-bottom: -2rem;
 }
 
-#adoretext {
+#text1 {
   color: rgb(255, 255, 255);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: lighter;
@@ -117,7 +117,7 @@ html {
   width: 90%;
 }
 
-#adoretext2 {
+#text2 {
   color: rgb(255, 255, 255);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: lighter;
@@ -171,5 +171,13 @@ html {
   #gameCover {
     height: 80%;
     width: 400px;
+  }
+
+  #text1 {
+    width: 60%;
+  }
+
+  #text2 {
+    width: 60%;
   }
 }
