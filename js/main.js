@@ -1,3 +1,30 @@
+//session storage save function
+function saveToSessionStorage() {
+  sessionStorage.loggedIn = loggedIn;
+}
+
+// Read from Session Storage fucntion
+function readFromSessionStorage() {
+  loggedIn = sessionStorage.loggedIn === "true";
+}
+
+//check earlier progress and load from session storage
+window.addEventListener("load", function () {
+  readFromSessionStorage();
+
+  if (loggedIn === true) {
+    loginBox.style.display = "none";
+    username.style.display = "none";
+    usernameHeader.style.display = "none";
+    password.style.display = "none";
+    passwordHeader.style.display = "none";
+    logInButton.style.display = "none";
+    close.style.display = "none";
+    logInButtonTop.style.display = "none";
+    profile.style.display = "block";
+  }
+});
+
 let arrowLeft = document.getElementById("arrowLeft");
 let arrowRight = document.getElementById("arrowRight");
 let game1 = document.getElementById("game1");
@@ -145,4 +172,7 @@ logInButton.addEventListener("click", function (event) {
   close.style.display = "none";
   logInButtonTop.style.display = "none";
   profile.style.display = "block";
+
+  loggedIn = true;
+  saveToSessionStorage();
 });

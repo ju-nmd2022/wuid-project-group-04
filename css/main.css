@@ -9,7 +9,7 @@ html {
   .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(16, 8rem);
+    grid-template-rows: repeat(17, 8rem);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
@@ -21,6 +21,7 @@ html {
       "hero hero hero hero hero hero hero hero hero hero"
       "hero hero hero hero hero hero hero hero hero hero"
       "hero hero hero hero hero hero hero hero hero hero"
+      ". . . headerG headerG headerG headerG . . ."
       ". . . headerG headerG headerG headerG . . ."
       "games games games games games games games games games games"
       "games games games games games games games games games games"
@@ -37,7 +38,7 @@ html {
   .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(15, 8rem);
+    grid-template-rows: repeat(16, 8rem);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
@@ -48,6 +49,7 @@ html {
       "hero hero hero hero hero hero hero hero hero hero"
       "hero hero hero hero hero hero hero hero hero hero"
       "hero hero hero hero hero hero hero hero hero hero"
+      ". . . headerG headerG headerG headerG . . ."
       ". . . headerG headerG headerG headerG . . ."
       "games games games games games games games games games games"
       "games games games games games games games games games games"
@@ -64,7 +66,7 @@ html {
   .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(14, 8rem);
+    grid-template-rows: repeat(15, 8rem);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
@@ -74,6 +76,7 @@ html {
       "hero hero hero hero hero hero hero hero hero hero"
       "hero hero hero hero hero hero hero hero hero hero"
       "hero hero hero hero hero hero hero hero hero hero"
+      ". . . headerG headerG headerG headerG . . ."
       ". . . headerG headerG headerG headerG . . ."
       "games games games games games games games games games games"
       "games games games games games games games games games games"
@@ -90,7 +93,7 @@ html {
   .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(13, 8rem);
+    grid-template-rows: repeat(14, 8rem);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
@@ -99,6 +102,7 @@ html {
       "hero hero hero hero hero hero hero hero hero hero"
       "hero hero hero hero hero hero hero hero hero hero"
       "hero hero hero hero hero hero hero hero hero hero"
+      " . . headerG headerG headerG headerG headerG headerG . ."
       " . . headerG headerG headerG headerG headerG headerG . ."
       "games games games games games games games games games games"
       "games games games games games games games games games games"
@@ -115,7 +119,7 @@ html {
   .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(12, 8rem);
+    grid-template-rows: repeat(13, 8rem);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
@@ -124,6 +128,7 @@ html {
       "hero hero hero hero hero hero hero hero hero hero"
       "hero hero hero hero hero hero hero hero hero hero"
       " . headerG headerG headerG headerG headerG headerG headerG headerG ."
+      " . . headerG headerG headerG headerG headerG headerG . ."
       "games games games games games games games games games games"
       "games games games games games games games games games games"
       "games games games games games games games games games games"
@@ -139,13 +144,14 @@ html {
   .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(11, 8rem);
+    grid-template-rows: repeat(12, 8rem);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
       "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
       "hero hero hero hero hero hero hero hero hero hero"
       "hero hero hero hero hero hero hero hero hero hero"
+      " . headerG headerG headerG headerG headerG headerG headerG headerG ."
       " . headerG headerG headerG headerG headerG headerG headerG headerG ."
       "games games games games games games games games games games"
       "games games games games games games games games games games"
@@ -377,10 +383,10 @@ html {
 }
 
 #headerG {
-  color: #666666;
+  color: #fffdfd;
+  font-size: 38pt;
   grid-area: headerG;
   place-self: center center;
-  margin-top: 10%;
 }
 
 #home {
