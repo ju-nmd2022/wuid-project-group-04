@@ -38,16 +38,16 @@ html {
     grid-template-areas:
       "back back . . . . . . . ."
       "back back header header header header header header . ."
-      ". rating rating rating rating rating rating rating rating ."
-      ". gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover ."
-      ". gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover ."
-      ". gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover ."
-      ". gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover ."
-      ". gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover ."
-      ". text1 text1 text1 text1 text1 text1 text1 text1 ."
-      ". text2 text2 text2 text2 text2 text2 text2 text2 ."
-      ". rectangle rectangle rectangle rectangle rectangle rectangle rectangle rectangle ."
-      ". button button button button button button button button ."
+      "rating rating rating rating rating rating rating rating rating rating"
+      "gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover"
+      "gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover"
+      "gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover"
+      "gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover"
+      "gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover"
+      "text1 text1 text1 text1 text1 text1 text1 text1 text1 text1"
+      "text2 text2 text2 text2 text2 text2 text2 text2 text2 text2"
+      "rectangle rectangle rectangle rectangle rectangle rectangle rectangle rectangle rectangle rectangle"
+      "button button button button button button button button button button"
       ". . . . . . . . . ."
       ". . . . . . . . . .";
   }
@@ -108,23 +108,25 @@ html {
   margin-bottom: -2rem;
 }
 
-#adoretext {
+#text1 {
   color: rgb(255, 255, 255);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: lighter;
   grid-area: text1;
   place-self: start center;
+  width: 90%;
 }
 
-#adoretext2 {
+#text2 {
   color: rgb(255, 255, 255);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: lighter;
   grid-area: text2;
   place-self: start center;
+  width: 90%;
 }
 
-#buynow {
+#buynowLink {
   grid-area: button;
   font-size: 20px;
   border: none;
@@ -132,14 +134,30 @@ html {
   box-shadow: 1px 1px 4px #031b10;
   width: 250px;
   height: 60px;
-  background-color: #8bd3b3;
   place-self: center center;
+}
+#buynow {
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px #031b10;
+  width: 250px;
+  height: 60px;
+  background-color: #8bd3b3;
 }
 
 #buynow:hover {
   background-color: #219e66;
   color: white;
   cursor: pointer;
+}
+
+#logInBuy {
+  font-size: 30px;
+  grid-area: button;
+  place-self: center center;
+  color: rgb(255, 255, 255);
+  display: none;
 }
 
 #rectangle {
@@ -155,19 +173,18 @@ html {
   place-self: end center;
 }
 
-#price {
-  grid-area: circle;
-  margin-top: 280px;
-  margin-left: -162px;
-}
-
 @media screen and (max-width: 1000px) {
-  #adoretext {
-    place-self: end center;
-  }
-
   #gameCover {
     height: 80%;
     width: 400px;
+  }
+
+  #text1 {
+    width: 60%;
+    place-self: end center;
+  }
+
+  #text2 {
+    width: 60%;
   }
 }

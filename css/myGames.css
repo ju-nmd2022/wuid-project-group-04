@@ -15,15 +15,15 @@ html {
       "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
       ". . . . . . . . . ."
       ". owned owned owned owned owned . . . ."
-      ". game1 game1 . game2 game2 . game3 game3 ."
-      ". game1 game1 . game2 game2 . game3 game3 ."
+      ". game1 game1 game1 . . . . . ."
+      ". game1 game1 game1 . . . . . ."
       ". . . . . . . . . ."
-      ". game4 game4 . game5 game5 . game6 game6 ."
-      ". game4 game4 . game5 game5 . game6 game6 ."
       ". . . . . . . . . ."
-      ". game7 game7 . game8 game8 . game9 game9 ."
-      ". game7 game7 . game8 game8 . game9 game9 ."
-      ". . . . . next next next next ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
       "footer footer footer footer footer footer footer footer footer footer"
       "footer footer footer footer footer footer footer footer footer footer";
   }
@@ -40,15 +40,15 @@ html {
       "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
       ". . . . . . . . . ."
       ". owned owned owned owned owned . . . ."
-      ". game1 game1 game1 . . game2 game2 game2 ."
-      ". game1 game1 game1 . . game2 game2 game2 ."
+      ". game1 game1 game1 . . . . . ."
+      ". game1 game1 game1 . . . . . ."
       ". . . . . . . . . ."
-      ". game3 game3 game3 . . game4 game4 game4 ."
-      ". game3 game3 game3 . . game4 game4 game4 ."
       ". . . . . . . . . ."
-      ". game5 game5 game5 . . game6 game6 game6 ."
-      ". game5 game5 game5 . . game6 game6 game6 ."
-      ". . . . . next next next next ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
       "footer footer footer footer footer footer footer footer footer footer"
       "footer footer footer footer footer footer footer footer footer footer";
   }
@@ -68,12 +68,12 @@ html {
       ". game1 game1 game1 game1 game1 game1 game1 game1 ."
       ". game1 game1 game1 game1 game1 game1 game1 game1 ."
       ". . . . . . . . . ."
-      ". game2 game2 game2 game2 game2 game2 game2 game2 ."
-      ". game2 game2 game2 game2 game2 game2 game2 game2 ."
       ". . . . . . . . . ."
-      ". game3 game3 game3 game3 game3 game3 game3 game3 ."
-      ". game3 game3 game3 game3 game3 game3 game3 game3 ."
-      ". . . . . next next next next ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
       "footer footer footer footer footer footer footer footer footer footer"
       "footer footer footer footer footer footer footer footer footer footer";
   }
@@ -360,23 +360,20 @@ html {
 }
 
 #profile {
-  grid-column-start: 10;
-  grid-column-end: 10;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-area: topbar;
   height: 30%;
-  place-self: center;
+  margin-right: 2rem;
+  place-self: center end;
   display: none;
 }
 
 #logInButtonTop {
   grid-area: topbar;
-  height: 30%;
-  width: 8rem;
+  height: 40%;
   place-self: center end;
   margin-right: 2rem;
+  cursor: pointer;
 }
-
 #loginBox {
   grid-column-start: 4;
   grid-column-end: 8;
@@ -439,6 +436,7 @@ html {
   width: 50%;
   place-self: start center;
   display: none;
+  cursor: pointer;
 }
 
 #close {
@@ -473,79 +471,6 @@ html {
 
 #game1 {
   grid-area: game1;
-  height: 100%;
-  overflow: hidden;
-  object-fit: cover;
-  max-width: 180px;
-  display: none;
-}
-
-#game2 {
-  grid-area: game2;
-  height: 100%;
-  overflow: hidden;
-  object-fit: cover;
-  max-width: 180px;
-  display: none;
-}
-#game3 {
-  grid-area: game3;
-  height: 100%;
-  overflow: hidden;
-  object-fit: cover;
-  max-width: 180px;
-  display: none;
-}
-#game4 {
-  grid-area: game4;
-  height: 100%;
-  overflow: hidden;
-  object-fit: cover;
-  max-width: 180px;
-  display: none;
-}
-#game5 {
-  grid-area: game5;
-  height: 100%;
-  overflow: hidden;
-  object-fit: cover;
-  max-width: 180px;
-  display: none;
-}
-#game6 {
-  grid-area: game6;
-  height: 100%;
-  overflow: hidden;
-  object-fit: cover;
-  max-width: 180px;
-  display: none;
-}
-#game7 {
-  grid-area: game7;
-  height: 100%;
-  overflow: hidden;
-  object-fit: cover;
-  max-width: 180px;
-  display: none;
-}
-#game8 {
-  grid-area: game8;
-  height: 100%;
-  overflow: hidden;
-  object-fit: cover;
-  max-width: 180px;
-  display: none;
-}
-#game9 {
-  grid-area: game9;
-  height: 100%;
-  overflow: hidden;
-  object-fit: cover;
-  max-width: 180px;
-  display: none;
-}
-#game10 {
-  grid-area: game10;
   height: 100%;
   overflow: hidden;
   object-fit: cover;

@@ -322,21 +322,19 @@ html {
 }
 
 #profile {
-  grid-column-start: 10;
-  grid-column-end: 10;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-area: topbar;
   height: 30%;
-  place-self: center;
+  margin-right: 2rem;
+  place-self: center end;
   display: none;
 }
 
 #logInButtonTop {
   grid-area: topbar;
-  height: 30%;
-  width: 8rem;
+  height: 40%;
   place-self: center end;
   margin-right: 2rem;
+  cursor: pointer;
 }
 
 #loginBox {
@@ -401,6 +399,7 @@ html {
   width: 50%;
   place-self: start center;
   display: none;
+  cursor: pointer;
 }
 
 #close {

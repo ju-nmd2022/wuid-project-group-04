@@ -1,3 +1,8 @@
+//session storage save function
+function saveToSessionStorage() {
+  sessionStorage.gameOwned = gameOwned;
+}
+
 let next = document.getElementById("next");
 let back = document.getElementById("back");
 let myGamesButton = document.getElementById("myGamesButton");
@@ -26,6 +31,8 @@ let cardNumberHeader = document.getElementById("cardNumberHeader");
 let expireHeader = document.getElementById("expireHeader");
 let cardCodeHeader = document.getElementById("cardCodeHeader");
 let agreeText = document.getElementById("agreeText");
+
+let gameOwned;
 
 next.addEventListener("click", function (event) {
   if (stage === 1) {
@@ -68,6 +75,9 @@ next.addEventListener("click", function (event) {
     myGames.style.display = "block";
 
     stage = 3;
+
+    gameOwned = true;
+    saveToSessionStorage();
   }
 });
 back.addEventListener("click", function (event) {
