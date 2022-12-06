@@ -379,15 +379,12 @@ html {
   display: none;
 }
 
-#logInButton {
-  grid-column-start: 4;
-  grid-column-end: 8;
-  grid-row-start: 6;
-  grid-row-end: 6;
+#logInButtonTop {
+  grid-area: topbar;
   height: 30%;
-  width: 50%;
-  place-self: start center;
-  display: none;
+  width: 8rem;
+  place-self: center end;
+  margin-right: 2rem;
 }
 
 #close {

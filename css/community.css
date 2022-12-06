@@ -313,13 +313,11 @@ html {
 }
 
 #logInButtonTop {
-  grid-column-start: 10;
-  grid-column-end: 10;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-area: topbar;
   height: 30%;
-  width: 80%;
-  place-self: center;
+  width: 8rem;
+  place-self: center end;
+  margin-right: 2rem;
 }
 
 #loginBox {
