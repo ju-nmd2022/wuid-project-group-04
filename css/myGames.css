@@ -366,6 +366,17 @@ html {
   grid-row-end: 2;
   height: 30%;
   place-self: center;
+  display: none;
+}
+
+#logInButtonTop {
+  grid-column-start: 10;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 30%;
+  width: 80%;
+  place-self: center;
 }
 
 #loginBox {
