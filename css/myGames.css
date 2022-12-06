@@ -497,7 +497,30 @@ html {
   place-self: start start;
   height: 1px;
   width: 100%;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+#logoFooter {
+  grid-area: footer;
+  height: 80px;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+#copyright {
+  grid-area: footer;
+  place-self: end start;
+  height: 80px;
+  margin-left: 1rem;
+  font-size: 16pt;
+}
+
+#contactFooter {
+  grid-area: footer;
+  place-self: end end;
+  height: 80px;
+  margin-right: 1rem;
+  font-size: 16pt;
 }
 
 /* content changes when width is 1100px or less */
@@ -575,6 +598,15 @@ html {
   }
   #game10 {
     display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #contactFooter {
+    font-size: 12pt;
+  }
+  #copyright {
+    font-size: 12pt;
   }
 }
 
