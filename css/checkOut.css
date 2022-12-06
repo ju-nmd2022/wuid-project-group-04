@@ -135,12 +135,14 @@ html {
   grid-area: eighteen;
   height: 40px;
   width: 160px;
-  background-color: #727272;
+  background-color: white;
   border: 0px;
 }
 
 #next:hover {
-  background-color: #396b43;
+  background-color: #219e66;
+  color: white;
+  cursor: pointer;
 }
 
 #back {
@@ -148,14 +150,15 @@ html {
   grid-area: eighteen;
   height: 40px;
   width: 160px;
-  background-color: #727272;
+  background-color: white;
   border: 0px;
   display: none;
 }
 
 #back:hover {
-  background-color: #396b43;
-  border-color: #396b43;
+  background-color: #219e66;
+  color: white;
+  cursor: pointer;
 }
 
 #myGames {
@@ -169,7 +172,7 @@ html {
 #myGamesButton {
   place-self: end center;
   grid-area: eighteen;
-  background-color: #727272;
+  background-color: white;
   border: 0px;
   height: 60px;
   width: 300px;
@@ -178,7 +181,9 @@ html {
 }
 
 #myGamesButton:hover {
-  background-color: #396b43;
+  background-color: #219e66;
+  color: white;
+  cursor: pointer;
 }
 
 /* Content changes for width 800px or less */

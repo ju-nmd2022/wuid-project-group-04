@@ -6,7 +6,12 @@ function saveToSessionStorage() {
 // Read from Session Storage fucntion
 function readFromSessionStorage() {
   loggedIn = sessionStorage.loggedIn === "true";
+  gameOwned = sessionStorage.gameOwned === "true";
 }
+
+let gameOwned;
+let game1 = document.getElementById("game1");
+let ownedHeader = document.getElementById("ownedHeader");
 
 //check earlier progress and load from session storage
 window.addEventListener("load", function () {
@@ -22,6 +27,11 @@ window.addEventListener("load", function () {
     close.style.display = "none";
     logInButtonTop.style.display = "none";
     profile.style.display = "block";
+  }
+
+  if (gameOwned === true) {
+    game1.style.display = "block";
+    ownedHeader.innerHTML = "Owned Games (1)";
   }
 });
 
