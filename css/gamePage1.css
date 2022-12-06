@@ -38,7 +38,7 @@ html {
     grid-template-areas:
       "back back . . . . . . . ."
       "back back header header header header header header . ."
-      "rating rating rating rating rating rating rating rating rating ."
+      "rating rating rating rating rating rating rating rating rating rating"
       "gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover"
       "gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover"
       "gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover gameCover"
@@ -114,6 +114,7 @@ html {
   font-weight: lighter;
   grid-area: text1;
   place-self: start center;
+  width: 90%;
 }
 
 #adoretext2 {
@@ -122,6 +123,7 @@ html {
   font-weight: lighter;
   grid-area: text2;
   place-self: start center;
+  width: 90%;
 }
 
 #buynow {
