@@ -7,16 +7,22 @@ html {
 .grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 8rem);
+  grid-template-rows: repeat(25, 8rem);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-areas:
     "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
+    "top top top top top top top top top top"
+    "top top top top top top top top top top"
+    ". . . . . . . . . ."
+    "text text text text text text text text text text"
+    "text text text text text text text text text text"
     ". . . . . . . . . ."
     ". . . . . . . . . ."
     ". . . . . . . . . ."
     ". . . . . . . . . ."
-    ". . . . . . . . . ."
+    "mid mid mid mid mid mid mid mid mid mid"
+    "mid mid mid mid mid mid mid mid mid mid"
     ". . . . . . . . . ."
     ". . . . . . . . . ."
     ". . . . . . . . . ."
@@ -394,6 +400,211 @@ html {
   margin-top: 20px;
   margin-right: 20px;
   display: none;
+}
+
+#topheader {
+  grid-area: top;
+  width: 100%;
+  height: 100%;
+  background-color: #d9d9d9;
+  box-shadow: 2px 2px 4px #020e08;
+}
+
+#toptext {
+  font-size: 150%;
+  grid-area: top;
+  place-self: center center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* for the first game presented */
+
+#lineOne {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-color: #5bb089;
+  width: 1px;
+}
+
+#lineText {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  color: white;
+  text-align: center;
+  place-self: center center;
+  font-size: 170%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#text1 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+}
+#text1-2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  margin-top: 30px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#games1 {
+  grid-column-start: 8;
+  grid-row-start: 6;
+  margin-top: -50px;
+  margin-left: -10px;
+}
+
+.b1 {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  font-size: 100%;
+  width: 170px;
+  height: 50px;
+  background-color: #5bb089;
+}
+
+/* for the second game presented */
+
+#lineTwo {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  background-color: #5bb089;
+  width: 1px;
+}
+
+#lineText2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  color: white;
+  text-align: center;
+  place-self: center center;
+  font-size: 170%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#text2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -20px;
+}
+
+#text2-1 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  margin-top: 30px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#games2 {
+  grid-column-start: 8;
+  grid-row-start: 8;
+  margin-top: -50px;
+  margin-left: -10px;
+}
+
+.b2 {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  font-size: 100%;
+  width: 170px;
+  height: 50px;
+  background-color: #5bb089;
+}
+
+/* for the third game presented */
+
+#lineThree {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  background-color: #5bb089;
+  width: 1px;
+}
+
+#lineText3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  color: white;
+  text-align: center;
+  place-self: center center;
+  font-size: 170%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#text3 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 9;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -20px;
+}
+
+#text3-1 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 9;
+  margin-top: 30px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#games3 {
+  grid-column-start: 8;
+  grid-row-start: 10;
+  margin-top: -50px;
+  margin-left: -10px;
+}
+
+.b3 {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  font-size: 100%;
+  width: 170px;
+  height: 50px;
+  background-color: #5bb089;
+}
+
+#header-2 {
+  grid-area: mid;
+  width: 100%;
+  height: 100%;
+  background-color: #d9d9d9;
+  box-shadow: 2px 2px 4px #020e08;
+}
+
+#toptext-2 {
+  font-size: 150%;
+  grid-area: mid;
+  place-self: center center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* content changes when width is 1100px or less */
