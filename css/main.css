@@ -633,12 +633,9 @@ html {
   place-self: center center;
 }
 
-#footerLine {
+#footerSection {
   grid-area: footer;
-  place-self: start start;
-  height: 1px;
-  width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: #506d56;
 }
 
 #logoFooter {

@@ -4,42 +4,98 @@ html {
   background-color: #052a19;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(30, 8rem);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  grid-template-areas:
-    "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
-    "top top top top top top top top top top"
-    "top top top top top top top top top top"
-    ". . . . . . . . . ."
-    "text text text text text text text text text text"
-    "text text text text text text text text text text"
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . game1 game1 . . . ."
-    "mid mid mid mid mid mid mid mid mid mid"
-    "mid mid mid mid mid mid mid mid mid mid"
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    "pod pod pod pod pod pod pod pod pod pod"
-    ". . . . . . . . . ."
-    ". . . . . . . . . ."
-    "bot bot bot bot bot bot bot bot bot bot"
-    "bot bot bot bot bot bot bot bot bot bot"
-    ". . . . . . . . . ."
-    ". game5 game5 game6 game6 game7 game7 game8 game8 ."
-    ". game5 game5 game6 game6 game7 game7 game8 game8 ."
-    ". game5 game5 game6 game6 game7 game7 game8 game8 ."
-    ". game9 game9 game10 game10 . . . . ."
-    ". game9 game9 game10 game10 . . . . ."
-    ". game9 game9 game10 game10 . . . . ."
-    ". . . . . . . . . .";
+@media screen and (min-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(27, 8rem);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+      "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
+      "top top top top top top top top top top"
+      "top top top top top top top top top top"
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      "most most most most most most most most most most"
+      "most most most most most most most most most most"
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      "new new new new new new new new new new"
+      "new new new new new new new new new new"
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      "footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer";
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(45, 8rem);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+      "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
+      "top top top top top top top top top top"
+      "top top top top top top top top top top"
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      "most most most most most most most most most most"
+      "most most most most most most most most most most"
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      "new new new new new new new new new new"
+      "new new new new new new new new new new"
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      "footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer";
+  }
 }
 
 #menuicon {
@@ -414,425 +470,273 @@ html {
   display: none;
 }
 
-/* for the top header */
-#topheader {
+#topSection {
   grid-area: top;
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-color: #d9d9d9;
   box-shadow: 2px 2px 4px #020e08;
 }
 
-#toptext {
-  font-size: 150%;
+#topSectionHeader {
   grid-area: top;
   place-self: center center;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* for the first game presented */
-
-#lineOne {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 5;
-  grid-row-end: 6;
-  background-color: #5bb089;
-  width: 1px;
-}
-
-#lineText {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;
-  color: white;
-  text-align: center;
-  place-self: center center;
-  font-size: 170%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.alien {
-  grid-column-start: 3;
-  grid-row-start: 5;
-  max-width: 100px;
-  max-height: 100px;
-  place-self: center center;
-  border-radius: 5px;
-}
-
-#text1 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 5;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 150%;
 }
-#text1-2 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 5;
-  margin-top: 30px;
+
+#developer1Text {
+  grid-area: developers;
+  place-self: start center;
+  width: 42rem;
   color: white;
+  font-size: 120%;
   font-family: Arial, Helvetica, sans-serif;
+  margin-top: 6rem;
 }
 
-#games1 {
-  grid-column-start: 8;
-  grid-row-start: 6;
-  margin-top: -50px;
-  margin-left: -10px;
+#alienLogo {
+  grid-area: developers;
+  place-self: start center;
+  margin-top: 9rem;
+  margin-inline-start: 55rem;
+  height: 120px;
 }
 
-.b1 {
-  padding: 10px;
-  border: none;
-  border-radius: 30px;
-  font-size: 100%;
-  width: 170px;
-  height: 50px;
+#line1placement {
+  grid-area: developers;
+  place-self: start center;
+  margin-top: 8.5rem;
+  margin-inline-end: 51rem;
+  height: 120px;
+  width: 2px;
   background-color: #5bb089;
 }
 
-/* for the second game presented */
+#number1 {
+  grid-area: developers;
+  place-self: start center;
+  font-size: 28pt;
+  color: white;
+  margin-top: 11rem;
+  margin-inline-end: 60rem;
+}
 
-#lineTwo {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 7;
-  grid-row-end: 8;
+#developer2Text {
+  grid-area: developers;
+  place-self: start center;
+  width: 42rem;
+  color: white;
+  font-size: 120%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 21rem;
+}
+
+#cadabraLogo {
+  grid-area: developers;
+  place-self: start center;
+  margin-top: 2.5rem;
+  margin-inline-start: 55rem;
+  height: 120px;
+  margin-top: 24rem;
+}
+
+#line2placement {
+  grid-area: developers;
+  place-self: start center;
+  margin-top: 2.5rem;
+  margin-inline-end: 51rem;
+  height: 120px;
+  width: 2px;
   background-color: #5bb089;
-  width: 1px;
+  margin-top: 23.5rem;
 }
 
-#lineText2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 7;
-  grid-row-end: 8;
+#number2 {
+  grid-area: developers;
+  place-self: start center;
+  font-size: 28pt;
   color: white;
-  text-align: center;
-  place-self: center center;
-  font-size: 170%;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5rem;
+  margin-inline-end: 60rem;
+  margin-top: 26rem;
 }
 
-#text2 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 7;
+#developer3Text {
+  grid-area: developers;
+  place-self: start center;
+  width: 42rem;
   color: white;
+  font-size: 120%;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: -20px;
+  margin-top: 36rem;
 }
 
-.cadabra {
-  grid-column-start: 3;
-  grid-row-start: 7;
-  max-width: 100px;
-  max-height: 100px;
-  place-self: center center;
-  border-radius: 5px;
+#bixelLogo {
+  grid-area: developers;
+  place-self: start center;
+  margin-top: 2.5rem;
+  margin-inline-start: 55rem;
+  height: 120px;
+  margin-top: 39rem;
 }
 
-#text2-1 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 7;
-  margin-top: 30px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#games2 {
-  grid-column-start: 8;
-  grid-row-start: 8;
-  margin-top: -50px;
-  margin-left: -10px;
-}
-
-.b2 {
-  padding: 10px;
-  border: none;
-  border-radius: 30px;
-  font-size: 100%;
-  width: 170px;
-  height: 50px;
+#line3placement {
+  grid-area: developers;
+  place-self: start center;
+  margin-top: 2.5rem;
+  margin-inline-end: 51rem;
+  height: 120px;
+  width: 2px;
   background-color: #5bb089;
+  margin-top: 38.5rem;
 }
 
-/* for the third game presented */
-
-#lineThree {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 9;
-  grid-row-end: 10;
-  background-color: #5bb089;
-  width: 1px;
-}
-
-#lineText3 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 9;
-  grid-row-end: 10;
+#number3 {
+  grid-area: developers;
+  place-self: start center;
+  font-size: 28pt;
   color: white;
-  text-align: center;
-  place-self: center center;
-  font-size: 170%;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5rem;
+  margin-inline-end: 60rem;
+  margin-top: 41rem;
 }
 
-.bixel {
-  grid-column-start: 3;
-  grid-row-start: 9;
-  max-width: 100px;
-  max-height: 100px;
-  place-self: center center;
-  border-radius: 5px;
-}
-
-#text3 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 9;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: -20px;
-}
-
-#text3-1 {
-  grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 9;
-  margin-top: 30px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#games3 {
-  grid-column-start: 8;
-  grid-row-start: 10;
-  margin-top: -50px;
-  margin-left: -10px;
-}
-
-.b3 {
-  padding: 10px;
-  border: none;
-  border-radius: 30px;
-  font-size: 100%;
-  width: 170px;
-  height: 50px;
-  background-color: #5bb089;
-}
-
-#header-2 {
-  grid-area: mid;
-  width: 100%;
+#mostSection {
+  grid-area: most;
   height: 100%;
+  width: 100%;
   background-color: #d9d9d9;
   box-shadow: 2px 2px 4px #020e08;
 }
 
-#toptext-2 {
-  font-size: 150%;
-  grid-area: mid;
+#mostSectionHeader {
+  grid-area: most;
   place-self: center center;
   text-align: center;
+  font-size: 150%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #podium {
-  grid-area: pod;
-  scale: 150%;
-  place-self: center;
-}
-
-.game1 {
-  width: 210px;
-  height: 280px;
-  box-shadow: 2px 4px 7px #020e08;
-}
-.game2 {
-  width: 200px;
-  height: 270px;
-  box-shadow: 2px 4px 7px #020e08;
-}
-.game3 {
-  width: 190px;
-  height: 270px;
-  box-shadow: 2px 4px 7px #020e08;
+  grid-area: podium;
+  scale: 120%;
+  place-self: end center;
+  margin-bottom: 12rem;
 }
 
 #game1 {
-  grid-area: game1;
-  place-self: center center;
-  margin-top: 82rem;
+  grid-area: podium;
+  place-self: end center;
+  margin-bottom: 21.5rem;
+  height: 260px;
   z-index: 1;
 }
 
 #game2 {
-  grid-column-start: 4;
-  grid-row-start: 15;
-  margin-top: 10rem;
-  place-self: center center;
-  z-index: 2;
-}
-
-#game3 {
-  grid-column-start: 7;
-  grid-row-start: 15;
-  margin-top: 12rem;
-  place-self: center center;
-  z-index: 2;
-}
-
-#game1:hover {
-  grid-area: game1;
-  place-self: center center;
-  margin-top: 75rem;
+  grid-area: podium;
+  place-self: end center;
+  margin-bottom: 18.5rem;
+  margin-inline-end: 26rem;
+  height: 180px;
   z-index: 1;
 }
 
-#game3:hover {
-  grid-column-start: 7;
-  grid-row-start: 15;
-  margin-top: 6rem;
-  place-self: center center;
-  z-index: 2;
+#game3 {
+  grid-area: podium;
+  place-self: end center;
+  margin-bottom: 17.8rem;
+  margin-inline-start: 26rem;
+  height: 160px;
+  z-index: 1;
 }
 
-#game2:hover {
-  grid-column-start: 4;
-  grid-row-start: 15;
-  margin-top: 4rem;
-  place-self: center center;
-  z-index: 2;
-}
-
-#header-3 {
-  grid-area: bot;
-  width: 100%;
+#newSection {
+  grid-area: new;
   height: 100%;
+  width: 100%;
   background-color: #d9d9d9;
   box-shadow: 2px 2px 4px #020e08;
 }
 
-#toptext-3 {
-  font-size: 150%;
-  grid-area: bot;
+#newGamesHeader {
+  grid-area: new;
   place-self: center center;
   text-align: center;
+  font-size: 150%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Latest Games */
-
-#game5 {
-  overflow: hidden;
-  object-fit: cover;
-  grid-area: game5;
-  height: 90%;
-  width: 220px;
+#newGame1Header {
+  grid-area: games;
   place-self: center center;
-  max-width: 100%;
+  margin-inline-end: 30rem;
+  margin-bottom: 28rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#game5cover {
-  overflow: hidden;
-  object-fit: cover;
-  height: 100%;
-  width: 220px;
-  max-width: 100%;
-}
-
-#game6 {
-  overflow: hidden;
-  object-fit: cover;
-  grid-area: game6;
-  height: 90%;
-  width: 220px;
+#newGame1 {
+  grid-area: games;
   place-self: center center;
-  max-width: 100%;
+  margin-inline-end: 30rem;
+  height: 300px;
+  width: 200px;
 }
-#game6cover {
-  overflow: hidden;
-  object-fit: cover;
-  height: 100%;
-  width: 220px;
-  max-width: 100%;
-}
-
-#game7 {
-  overflow: hidden;
-  object-fit: cover;
-  grid-area: game7;
-  height: 90%;
-  width: 220px;
+#newGame2Header {
+  grid-area: games;
   place-self: center center;
-  max-width: 100%;
+  margin-bottom: 28rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#game7cover {
-  overflow: hidden;
-  object-fit: cover;
-  height: 100%;
-  width: 220px;
-  max-width: 100%;
+#newGame2 {
+  grid-area: games;
+  place-self: center center;
+  height: 300px;
+  width: 200px;
+}
+#newGame3Header {
+  grid-area: games;
+  place-self: center center;
+  margin-inline-start: 30rem;
+  margin-bottom: 28rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#newGame3 {
+  grid-area: games;
+  place-self: center center;
+  margin-inline-start: 30rem;
+  height: 300px;
+  width: 200px;
 }
 
-#game8 {
-  overflow: hidden;
-  object-fit: cover;
-  grid-area: game8;
-  height: 90%;
-  width: 220px;
-  place-self: center center;
-  max-width: 100%;
-}
-#game8cover {
-  overflow: hidden;
-  object-fit: cover;
-  height: 100%;
-  width: 220px;
-  max-width: 100%;
+#footerSection {
+  grid-area: footer;
+  background-color: #506d56;
 }
 
-#game9 {
-  overflow: hidden;
-  object-fit: cover;
-  grid-area: game9;
-  height: 90%;
-  width: 220px;
-  place-self: center center;
-  max-width: 100%;
-}
-#game9cover {
-  overflow: hidden;
-  object-fit: cover;
-  height: 100%;
-  width: 220px;
-  max-width: 100%;
+#logoFooter {
+  grid-area: footer;
+  height: 80px;
+  margin-top: 3rem;
+  margin-left: 1rem;
 }
 
-#game10 {
-  overflow: hidden;
-  object-fit: cover;
-  grid-area: game10;
-  height: 90%;
-  width: 220px;
-  place-self: center center;
-  max-width: 100%;
+#copyright {
+  grid-area: footer;
+  place-self: end start;
+  height: 80px;
+  margin-left: 1rem;
+  font-size: 16pt;
 }
-#game10cover {
-  overflow: hidden;
-  object-fit: cover;
-  height: 100%;
-  width: 220px;
-  max-width: 100%;
+
+#contactFooter {
+  grid-area: footer;
+  place-self: end end;
+  height: 80px;
+  margin-right: 1rem;
+  font-size: 16pt;
 }
 
 /* content changes when width is 1100px or less */
@@ -897,5 +801,147 @@ html {
     height: 100%;
     background-color: #d9d9d9;
     box-shadow: 2px 2px 4px #020e08;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #developer1Text {
+    width: 80%;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 18rem;
+  }
+
+  #alienLogo {
+    margin-top: 9.5rem;
+    margin-inline-start: 12rem;
+    height: 100px;
+  }
+
+  #line1placement {
+    margin-top: 9rem;
+    margin-inline-end: 0rem;
+  }
+
+  #number1 {
+    font-size: 60pt;
+    margin-top: 10rem;
+    margin-inline-end: 12rem;
+  }
+
+  #developer2Text {
+    width: 80%;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 49rem;
+  }
+
+  #cadabraLogo {
+    margin-top: 40.5rem;
+    margin-inline-start: 12rem;
+    height: 100px;
+  }
+
+  #line2placement {
+    margin-top: 40rem;
+    margin-inline-end: 0rem;
+  }
+
+  #number2 {
+    font-size: 60pt;
+    margin-top: 41rem;
+    margin-inline-end: 12rem;
+  }
+
+  #developer3Text {
+    width: 80%;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 80rem;
+  }
+
+  #bixelLogo {
+    margin-top: 71.5rem;
+    margin-inline-start: 12rem;
+    height: 100px;
+  }
+
+  #line3placement {
+    margin-top: 71rem;
+    margin-inline-end: 0rem;
+  }
+
+  #number3 {
+    font-size: 60pt;
+    margin-top: 72rem;
+    margin-inline-end: 12rem;
+  }
+
+  #podium {
+    display: none;
+  }
+
+  #game1 {
+    place-self: start center;
+    margin-top: 6rem;
+    height: 300px;
+    width: 200px;
+  }
+
+  #game2 {
+    place-self: start center;
+    margin-top: 30rem;
+    margin-inline-end: 0rem;
+    height: 300px;
+    width: 200px;
+  }
+
+  #game3 {
+    place-self: start center;
+    margin-bottom: 0rem;
+    margin-inline-start: 0rem;
+    height: 300px;
+    width: 200px;
+    margin-top: 54rem;
+  }
+
+  #newGame1Header {
+    display: none;
+  }
+
+  #newGame1 {
+    place-self: start center;
+    margin-top: 6rem;
+    margin-inline-end: 0rem;
+    height: 300px;
+    width: 200px;
+  }
+  #newGame2Header {
+    display: none;
+  }
+  #newGame2 {
+    place-self: start center;
+    margin-top: 30rem;
+    margin-inline-end: 0rem;
+    height: 300px;
+    width: 200px;
+  }
+  #newGame3Header {
+    display: none;
+  }
+  #newGame3 {
+    place-self: start center;
+    margin-bottom: 0rem;
+    margin-inline-start: 0rem;
+    height: 300px;
+    width: 200px;
+    margin-top: 54rem;
+  }
+
+  #contactFooter {
+    font-size: 12pt;
+  }
+  #copyright {
+    font-size: 12pt;
   }
 }

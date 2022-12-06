@@ -481,6 +481,11 @@ html {
   color: white;
 }
 
+#footerSection {
+  grid-area: footer;
+  background-color: #506d56;
+}
+
 #logoFooter {
   grid-area: footer;
   height: 80px;
