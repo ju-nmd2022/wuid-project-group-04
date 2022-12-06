@@ -1,0 +1,420 @@
+#body,
+html {
+  background-image: linear-gradient(#052a19, #506d56);
+  margin: 0px;
+}
+
+/* Grid-area when width is 800px or more */
+@media screen and (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 8rem);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+      "back back header header header header header header . ."
+      "back back circle1 circle1 circle2 circle2 circle3 circle3 . ."
+      ". . gamecover gamecover gamecover gamecover gamecover gamecover . ."
+      ". . gamecover gamecover gamecover gamecover gamecover gamecover . ."
+      ". . gamecover gamecover gamecover gamecover gamecover gamecover . ."
+      ". . gamecover gamecover gamecover gamecover gamecover gamecover . ."
+      ". . eighteen eighteen eighteen eighteen eighteen eighteen . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . ."
+      ". . . . . . . . . .";
+  }
+}
+
+/* Grid-area when width is 800px or less */
+@media screen and (max-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 8rem);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+      "back header header header ."
+      "back circle1 circle2 circle3 ."
+      ". gamecover gamecover gamecover ."
+      ". gamecover gamecover gamecover ."
+      ". gamecover gamecover gamecover ."
+      ". eighteen eighteen eighteen ."
+      ". . . . .";
+  }
+}
+
+#checkoutHeader {
+  grid-area: header;
+  place-self: center center;
+  font-size: 38pt;
+  color: white;
+}
+
+#arrowLeft {
+  grid-area: back;
+  height: 50%;
+  place-self: center center;
+}
+
+#arrowLeftimg {
+  height: 50%;
+}
+
+#circle1 {
+  grid-area: circle1;
+  height: 4rem;
+  width: 4rem;
+  background-color: #396b43;
+  color: white;
+  border-radius: 100%;
+  place-self: center center;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 24pt;
+}
+
+#circle2 {
+  grid-area: circle2;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  background-color: #727272;
+  color: white;
+  place-self: center center;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 24pt;
+}
+
+#circle3 {
+  grid-area: circle3;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  background-color: #727272;
+  color: white;
+  place-self: center center;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 24pt;
+}
+
+#gamecover {
+  place-self: start center;
+  grid-area: gamecover;
+  height: 100%;
+}
+
+#done {
+  grid-area: gamecover;
+  place-self: center center;
+  display: none;
+}
+
+#text18 {
+  grid-area: eighteen;
+  place-self: start center;
+  color: rgba(245, 245, 245, 0.788);
+  margin-inline-end: 2rem;
+}
+
+#checkbox18 {
+  grid-area: eighteen;
+  height: 1.5rem;
+  margin-top: 12px;
+  place-self: start center;
+  margin-inline-start: 11rem;
+}
+
+#next {
+  place-self: center end;
+  grid-area: eighteen;
+  height: 40px;
+  width: 160px;
+  background-color: #727272;
+  border: 0px;
+}
+
+#next:hover {
+  background-color: #396b43;
+}
+
+#back {
+  place-self: center start;
+  grid-area: eighteen;
+  height: 40px;
+  width: 160px;
+  background-color: #727272;
+  border: 0px;
+  display: none;
+}
+
+#back:hover {
+  background-color: #396b43;
+  border-color: #396b43;
+}
+
+#myGames {
+  place-self: end center;
+  grid-area: eighteen;
+  height: 60px;
+  width: 300px;
+  display: none;
+  text-decoration: none;
+}
+#myGamesButton {
+  place-self: end center;
+  grid-area: eighteen;
+  background-color: #727272;
+  border: 0px;
+  height: 60px;
+  width: 300px;
+  display: none;
+  text-decoration: none;
+}
+
+#myGamesButton:hover {
+  background-color: #396b43;
+}
+
+/* Content changes for width 800px or less */
+@media screen and (max-width: 800px) {
+  #line1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    height: 1px;
+    width: 50%;
+    background-color: #727272;
+    place-self: center center;
+  }
+  #line2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    height: 1px;
+    width: 50%;
+    background-color: #727272;
+    place-self: center center;
+  }
+  #next {
+    height: 25px;
+    width: 90px;
+  }
+  #back {
+    height: 25px;
+    width: 90px;
+  }
+}
+
+/* Content changes for width 800px or more */
+@media screen and (min-width: 800px) {
+  #line1 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    height: 1px;
+    width: 100%;
+    background-color: #727272;
+    place-self: center center;
+  }
+  #line2 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    height: 1px;
+    width: 100%;
+    background-color: #727272;
+    place-self: center center;
+  }
+
+  #next {
+    place-self: end end;
+  }
+
+  #back {
+    place-self: end start;
+  }
+
+  #paymentCards {
+    grid-area: gamecover;
+    height: 3rem;
+    place-self: start center;
+    margin-top: 4rem;
+    display: none;
+  }
+
+  #cardNumber {
+    grid-area: gamecover;
+    place-self: start center;
+    height: 20px;
+    width: 40%;
+    margin-top: 12rem;
+    display: none;
+  }
+
+  #cardNumberHeader {
+    grid-area: gamecover;
+    place-self: start center;
+    color: white;
+    font-size: 12pt;
+    height: 20px;
+    width: 40%;
+    margin-top: 10rem;
+    display: none;
+  }
+
+  #expire {
+    grid-area: gamecover;
+    place-self: start center;
+    height: 20px;
+    width: 40%;
+    margin-top: 19rem;
+    display: none;
+  }
+
+  #expireHeader {
+    grid-area: gamecover;
+    place-self: start center;
+    color: white;
+    font-size: 12pt;
+    height: 20px;
+    width: 40%;
+    margin-top: 17rem;
+    display: none;
+  }
+
+  #cardCode {
+    grid-area: gamecover;
+    place-self: start center;
+    height: 20px;
+    width: 40%;
+    margin-top: 26rem;
+    display: none;
+  }
+
+  #cardCodeHeader {
+    grid-area: gamecover;
+    place-self: start center;
+    color: white;
+    font-size: 12pt;
+    height: 20px;
+    width: 40%;
+    margin-top: 24rem;
+    display: none;
+  }
+
+  #agree {
+    grid-area: gamecover;
+    place-self: start center;
+    margin-top: 31.5rem;
+    margin-inline-end: 14rem;
+    display: none;
+  }
+
+  #agreeText {
+    grid-area: gamecover;
+    place-self: start center;
+    margin-top: 31rem;
+    margin-inline-end: -6rem;
+    color: white;
+    font-size: 10pt;
+    display: none;
+  }
+}
+
+/* Content changes for width 800px or less */
+@media screen and (max-width: 800px) {
+  #paymentCards {
+    grid-area: gamecover;
+    height: 2rem;
+    place-self: start center;
+    margin-top: 2rem;
+    display: none;
+  }
+
+  #cardNumber {
+    grid-area: gamecover;
+    place-self: start center;
+    height: 15px;
+    width: 40%;
+    margin-top: 7.5rem;
+    display: none;
+  }
+
+  #cardNumberHeader {
+    grid-area: gamecover;
+    place-self: start center;
+    color: white;
+    font-size: 12pt;
+    height: 20px;
+    width: 40%;
+    margin-top: 6rem;
+    display: none;
+  }
+
+  #expire {
+    grid-area: gamecover;
+    place-self: start center;
+    height: 15px;
+    width: 40%;
+    margin-top: 11.5rem;
+    display: none;
+  }
+
+  #expireHeader {
+    grid-area: gamecover;
+    place-self: start center;
+    color: white;
+    font-size: 12pt;
+    width: 40%;
+    margin-top: 10rem;
+    display: none;
+  }
+
+  #cardCode {
+    grid-area: gamecover;
+    place-self: start center;
+    height: 15px;
+    width: 40%;
+    margin-top: 15.5rem;
+    display: none;
+  }
+
+  #cardCodeHeader {
+    grid-area: gamecover;
+    place-self: start center;
+    color: white;
+    font-size: 12pt;
+    height: 20px;
+    width: 40%;
+    margin-top: 14rem;
+    display: none;
+  }
+
+  #agree {
+    grid-area: gamecover;
+    place-self: start center;
+    margin-top: 21.5rem;
+    margin-inline-end: 10rem;
+    display: none;
+  }
+
+  #agreeText {
+    grid-area: gamecover;
+    place-self: start center;
+    margin-top: 21rem;
+    margin-inline-end: -9rem;
+    color: white;
+    font-size: 10pt;
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+body,
+html {
+  margin: 0px;
+  background-image: linear-gradient(#052a19, #506d56);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(12, 8rem);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas:
+    "back back . . . . . . . . ."
+    "back back . . . . header header header header ."
+    ". gameCover gameCover gameCover gameCover gameCover rating rating rating rating ."
+    ". gameCover gameCover gameCover gameCover gameCover . . . . ."
+    ". gameCover gameCover gameCover gameCover gameCover . . . . ."
+    ". gameCover gameCover gameCover gameCover gameCover . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . .";
+}
+
+#arrowLeft {
+  grid-area: back;
+  height: 50%;
+  place-self: center center;
+}
+
+#arrowLeftimg {
+  height: 50%;
+}
+
+#gameCover {
+  grid-area: gameCover;
+  height: 100%;
+  width: 26rem;
+}
+
+#header {
+  grid-area: header;
+  place-self: center center;
+  color: white;
+  font-size: 28pt;
+}
+
+#rating {
+  grid-area: header;
+  height: 20%;
+  place-self: end center;
+}

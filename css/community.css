@@ -1,0 +1,360 @@
+body,
+html {
+  margin: 0px;
+  background-color: #052a19;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 8rem);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas:
+    "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . .";
+}
+
+#menuicon {
+  grid-area: topbar;
+  align-self: center;
+  margin-left: 1rem;
+  width: 50px;
+  height: 50px;
+  visibility: hidden;
+}
+
+#hamburger-menu {
+  grid-area: topbar;
+  align-self: center;
+  width: 210px;
+  height: 35px;
+  display: none;
+}
+
+#menu-list {
+  background-color: #506d56;
+  margin-top: 81px;
+  margin-left: -32px;
+  height: 278px;
+}
+
+#home-menu {
+  background-color: white;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: #506d56;
+  padding: 7px 72px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+  cursor: pointer;
+}
+
+#home-menu:hover {
+  background-color: #394e3e;
+}
+
+#about-menu {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: #506d56;
+  padding: 7px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+  cursor: pointer;
+}
+
+#about-menu:hover {
+  background-color: #394e3e;
+}
+
+#community-menu {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: #506d56;
+  padding: 7px 52.5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+  cursor: pointer;
+}
+
+#community-menu:hover {
+  background-color: #394e3e;
+}
+
+#store-menu {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: #506d56;
+  padding: 7px 74px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+  cursor: pointer;
+}
+
+#store-menu:hover {
+  background-color: #394e3e;
+}
+
+#myGames-menu {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: #506d56;
+  padding: 7px 54px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+  cursor: pointer;
+}
+
+#myGames-menu:hover {
+  background-color: #394e3e;
+}
+
+#close-menu {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: #506d56;
+  padding: 7px 72px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+  cursor: pointer;
+}
+
+#close-menu:hover {
+  background-color: #394e3e;
+}
+
+#logo {
+  grid-area: topbar;
+  height: 70%;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+#logoText {
+  grid-area: topbar;
+  place-self: left center;
+  margin-top: 3.5rem;
+  margin-left: 7.5rem;
+  font-weight: 500;
+}
+
+#topbar {
+  background-color: #506d56;
+  grid-area: topbar;
+}
+#home {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 12pt;
+  place-self: center;
+  align-self: center;
+  font-weight: bold;
+  color: black;
+}
+
+#about {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 12pt;
+  place-self: center;
+  align-self: center;
+  font-weight: bold;
+  color: black;
+}
+
+#community {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 12pt;
+  place-self: center;
+  align-self: center;
+  color: white;
+}
+
+#store {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 12pt;
+  place-self: center;
+  align-self: center;
+  font-weight: bold;
+  color: black;
+}
+
+#myGames {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 12pt;
+  place-self: center;
+  align-self: center;
+  font-weight: bold;
+  color: black;
+}
+
+#line1 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgba(0, 0, 0, 0.555);
+  width: 1px;
+  height: 80%;
+  place-self: center;
+  align-self: center;
+}
+
+#line2 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgba(0, 0, 0, 0.555);
+  width: 1px;
+  height: 80%;
+  place-self: center;
+  align-self: center;
+}
+#line3 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgba(0, 0, 0, 0.555);
+  width: 1px;
+  height: 80%;
+  place-self: center;
+  align-self: center;
+}
+#line4 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgba(0, 0, 0, 0.555);
+  width: 1px;
+  height: 80%;
+  place-self: center;
+  align-self: center;
+}
+
+#line5 {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgba(0, 0, 0, 0.555);
+  width: 1px;
+  height: 80%;
+  place-self: center;
+  align-self: center;
+}
+#line6 {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgba(0, 0, 0, 0.555);
+  width: 1px;
+  height: 80%;
+  place-self: center;
+  align-self: center;
+}
+
+/* content changes when width is 1100px or less */
+@media screen and (max-width: 1100px) {
+  #home {
+    visibility: hidden;
+  }
+
+  #about {
+    visibility: hidden;
+  }
+
+  #community {
+    visibility: hidden;
+  }
+
+  #store {
+    visibility: hidden;
+  }
+
+  #myGames {
+    visibility: hidden;
+  }
+
+  #line1 {
+    visibility: hidden;
+  }
+
+  #line2 {
+    visibility: hidden;
+  }
+  #line3 {
+    visibility: hidden;
+  }
+  #line4 {
+    visibility: hidden;
+  }
+
+  #line5 {
+    visibility: hidden;
+  }
+  #line6 {
+    visibility: hidden;
+  }
+  #logo {
+    grid-area: topbar;
+    height: 70%;
+    align-self: center;
+    margin-left: 5rem;
+  }
+  #logoText {
+    margin-left: 11.5rem;
+  }
+
+  #menuicon {
+    visibility: visible;
+  }
+}
