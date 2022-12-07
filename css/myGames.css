@@ -630,4 +630,18 @@ html {
   #game10 {
     display: none;
   }
+  #copyright {
+    font-size: 10pt;
+  }
+
+  #contactFooter {
+    font-size: 10pt;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    place-self: end start;
+  }
+
+  #logoText {
+    display: none;
+  }
 }

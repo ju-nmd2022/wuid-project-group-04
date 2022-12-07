@@ -814,8 +814,7 @@ html {
 
   #logInButtonTop {
     grid-area: topbar;
-    height: 30%;
-    width: 8rem;
+    height: 40%;
     place-self: center end;
     margin-right: 2rem;
   }
@@ -831,5 +830,22 @@ html {
   }
   #copyright {
     font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #copyright {
+    font-size: 10pt;
+  }
+
+  #contactFooter {
+    font-size: 10pt;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    place-self: end start;
+  }
+
+  #logoText {
+    display: none;
   }
 }

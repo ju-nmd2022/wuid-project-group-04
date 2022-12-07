@@ -99,6 +99,64 @@ html {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(47, 8rem);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+      "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
+      "top top top top top top top top top top"
+      "top top top top top top top top top top"
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      ". developers developers developers developers developers developers developers developers ."
+      "most most most most most most most most most most"
+      "most most most most most most most most most most"
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      ". podium podium podium podium podium podium podium podium ."
+      "new new new new new new new new new new"
+      "new new new new new new new new new new"
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      ". games games games games games games games games ."
+      "footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer";
+  }
+}
+
 #menuicon {
   grid-area: topbar;
   align-self: center;
@@ -944,5 +1002,70 @@ html {
   }
   #copyright {
     font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #copyright {
+    font-size: 10pt;
+  }
+
+  #contactFooter {
+    font-size: 10pt;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    place-self: end start;
+  }
+
+  #logoText {
+    display: none;
+  }
+
+  #developer2Text {
+    width: 80%;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 56rem;
+  }
+
+  #cadabraLogo {
+    margin-top: 47.5rem;
+    margin-inline-start: 12rem;
+    height: 100px;
+  }
+
+  #line2placement {
+    margin-top: 47rem;
+    margin-inline-end: 0rem;
+  }
+
+  #number2 {
+    font-size: 60pt;
+    margin-top: 48rem;
+    margin-inline-end: 12rem;
+  }
+
+  #developer3Text {
+    width: 80%;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 94rem;
+  }
+
+  #bixelLogo {
+    margin-top: 85.5rem;
+    margin-inline-start: 12rem;
+    height: 100px;
+  }
+
+  #line3placement {
+    margin-top: 85rem;
+    margin-inline-end: 0rem;
+  }
+
+  #number3 {
+    font-size: 60pt;
+    margin-top: 86rem;
+    margin-inline-end: 12rem;
   }
 }

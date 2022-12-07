@@ -1085,6 +1085,35 @@ html {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #copyright {
+    font-size: 10pt;
+  }
+
+  #contactFooter {
+    font-size: 10pt;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    place-self: end start;
+  }
+
+  #logoText {
+    display: none;
+  }
+
+  #headerG {
+    font-size: 22pt;
+  }
+
+  #arrowLeft {
+    height: 20%;
+  }
+
+  #arrowRight {
+    height: 20%;
+  }
+}
+
 /* animation(keyframes) for the box/circle at top */
 @keyframes fall {
   0% {
