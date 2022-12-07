@@ -27,6 +27,32 @@ html {
     "footer footer footer footer footer footer footer footer footer footer";
 }
 
+@media screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(15, 8rem);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+      "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
+      "top top top top top top top top top top"
+      "top top top top top top top top top top"
+      "about about about about about about about about about about"
+      "about about about about about about about about about about"
+      "about about about about about about about about about about"
+      "about about about about about about about about about about"
+      "vision vision vision vision vision vision vision vision vision vision"
+      "vision vision vision vision vision vision vision vision vision vision"
+      "vision vision vision vision vision vision vision vision vision vision"
+      "contact contact contact contact contact contact contact contact contact contact"
+      "contact contact contact contact contact contact contact contact contact contact"
+      "contact contact contact contact contact contact contact contact contact contact"
+      "footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer";
+  }
+}
+
 #menuicon {
   grid-area: topbar;
   align-self: center;
