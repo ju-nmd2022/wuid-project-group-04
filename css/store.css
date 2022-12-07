@@ -14,9 +14,9 @@ html {
     grid-row-gap: 0px;
     grid-template-areas:
       "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
-      ". sale1 sale1 . sale2 sale2 . sale3 sale3 ."
-      ". sale1 sale1 . sale2 sale2 . sale3 sale3 ."
-      ". sale1 sale1 . sale2 sale2 . sale3 sale3 ."
+      "sale sale sale sale sale sale sale sale sale sale"
+      "sale sale sale sale sale sale sale sale sale sale"
+      "sale sale sale sale sale sale sale sale sale sale"
       ". top top top top . . . . ."
       ". game1 game1 game2 game2 game3 game3 game4 game4 ."
       ". game1 game1 game2 game2 game3 game3 game4 game4 ."
@@ -44,9 +44,9 @@ html {
     grid-row-gap: 0px;
     grid-template-areas:
       "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
-      ". sale1 sale1 . sale2 sale2 . sale3 sale3 ."
-      ". sale1 sale1 . sale2 sale2 . sale3 sale3 ."
-      ". sale1 sale1 . sale2 sale2 . sale3 sale3 ."
+      "sale sale sale sale sale sale sale sale sale sale"
+      "sale sale sale sale sale sale sale sale sale sale"
+      "sale sale sale sale sale sale sale sale sale sale"
       ". top top top top . . . . ."
       ". game1 game1 . game2 game2 . game3 game3 ."
       ". game1 game1 . game2 game2 . game3 game3 ."
@@ -79,9 +79,9 @@ html {
     grid-row-gap: 0px;
     grid-template-areas:
       "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
-      ". . sale1 sale1 . . sale2 sale2 . ."
-      ". . sale1 sale1 . . sale2 sale2 . ."
-      ". . sale1 sale1 . . sale2 sale2 . ."
+      "sale sale sale sale sale sale sale sale sale sale"
+      "sale sale sale sale sale sale sale sale sale sale"
+      "sale sale sale sale sale sale sale sale sale sale"
       ". . top top top top . . . ."
       ". game1 game1 game1 game1 game2 game2 game2 game2 ."
       ". game1 game1 game1 game1 game2 game2 game2 game2 ."
@@ -117,9 +117,9 @@ html {
     grid-row-gap: 0px;
     grid-template-areas:
       "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
-      ". . . sale1 sale1 sale1 sale1 . . ."
-      ". . . sale1 sale1 sale1 sale1 . . ."
-      ". . . sale1 sale1 sale1 sale1 . . ."
+      "sale sale sale sale sale sale sale sale sale sale"
+      "sale sale sale sale sale sale sale sale sale sale"
+      "sale sale sale sale sale sale sale sale sale sale"
       ". top top top top top top top top ."
       ". game1 game1 game1 game1 game1 game1 game1 game1 ."
       ". game1 game1 game1 game1 game1 game1 game1 game1 ."
@@ -725,6 +725,106 @@ html {
   max-width: 100%;
 }
 
+#saleImage {
+  grid-area: sale;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#saleHeader {
+  grid-area: sale;
+  place-self: start center;
+  color: white;
+  margin-inline-start: 50%;
+  margin-top: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#saleConsole {
+  color: rgb(175, 174, 174);
+  font-size: 14pt;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  grid-area: sale;
+  place-self: start center;
+  margin-inline-start: 50%;
+  margin-top: 5rem;
+}
+
+#saleGenre {
+  color: rgb(175, 174, 174);
+  font-size: 14pt;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  grid-area: sale;
+  place-self: start center;
+  margin-inline-start: 50%;
+  margin-top: 7rem;
+}
+
+#saleText {
+  color: white;
+  font-size: 14pt;
+  width: 35%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: lighter;
+  grid-area: sale;
+  place-self: start center;
+  margin-inline-start: 50%;
+  margin-top: 10rem;
+}
+
+#originalPrice {
+  grid-area: sale;
+  place-self: end center;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px #031b10;
+  width: 180px;
+  height: 40px;
+  margin-inline-start: 35%;
+  margin-bottom: 2rem;
+}
+#redLine {
+  grid-area: sale;
+  place-self: end center;
+  width: 60px;
+  height: 10px;
+  margin-inline-start: 35%;
+  margin-bottom: 3rem;
+}
+
+#buynowLink {
+  grid-area: sale;
+  place-self: end center;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px #031b10;
+  width: 200px;
+  height: 40px;
+  margin-inline-start: 65%;
+  margin-bottom: 2rem;
+  background-color: #8bd3b3;
+}
+#buynow {
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  background-color: #8bd3b3;
+}
+
+#buynow:hover {
+  background-color: #219e66;
+  color: white;
+  cursor: pointer;
+}
+
 #footerSection {
   grid-area: footer;
   background-color: #506d56;
@@ -818,6 +918,40 @@ html {
     place-self: center end;
     margin-right: 2rem;
   }
+
+  #saleImage {
+    display: none;
+  }
+
+  #saleHeader {
+    margin-inline-start: 0;
+  }
+
+  #saleConsole {
+    margin-inline-start: 0;
+  }
+
+  #saleGenre {
+    margin-inline-start: 0;
+  }
+
+  #saleText {
+    margin-inline-start: 0;
+    width: 60%;
+  }
+
+  #originalPrice {
+    margin-inline-start: 0%;
+    margin-bottom: 80px;
+  }
+  #redLine {
+    margin-inline-start: 0%;
+    margin-bottom: 95px;
+  }
+
+  #buynowLink {
+    margin-inline-start: 0%;
+  }
 }
 
 /* Content changes when width is 800px or less */
@@ -847,5 +981,13 @@ html {
 
   #logoText {
     display: none;
+  }
+}
+
+/* Content changes when width is 600px or less */
+@media screen and (max-width: 600px) {
+  #saleText {
+    width: 90%;
+    text-align: center;
   }
 }
