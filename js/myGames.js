@@ -61,6 +61,7 @@ let logInButton = document.getElementById("logInButton");
 let close = document.getElementById("close");
 let create = document.getElementById("create");
 
+//opens the log in window if you clicck right top corner
 logInButtonTop.addEventListener("click", function (event) {
   loginBox.style.display = "block";
   username.style.display = "block";
@@ -72,6 +73,7 @@ logInButtonTop.addEventListener("click", function (event) {
   create.style.display = "block";
 });
 
+//closes the log in window
 close.addEventListener("click", function (event) {
   loginBox.style.display = "none";
   username.style.display = "none";

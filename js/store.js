@@ -51,6 +51,7 @@ let logInButton = document.getElementById("logInButton");
 let close = document.getElementById("close");
 let create = document.getElementById("create");
 
+//opens the log in window if you clicck right top corner
 logInButtonTop.addEventListener("click", function (event) {
   loginBox.style.display = "block";
   username.style.display = "block";
@@ -62,6 +63,7 @@ logInButtonTop.addEventListener("click", function (event) {
   create.style.display = "block";
 });
 
+//closes the log in window
 close.addEventListener("click", function (event) {
   loginBox.style.display = "none";
   username.style.display = "none";
@@ -73,6 +75,7 @@ close.addEventListener("click", function (event) {
   create.style.display = "none";
 });
 
+//log you in
 logInButton.addEventListener("click", function (event) {
   loginBox.style.display = "none";
   username.style.display = "none";
@@ -85,6 +88,7 @@ logInButton.addEventListener("click", function (event) {
   profile.style.display = "block";
   create.style.display = "none";
 
+  //save that you are logged in in s. storage
   loggedIn = true;
   saveToSessionStorage();
 });
