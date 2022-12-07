@@ -4,6 +4,7 @@ html {
   background-color: #a0bfb1;
 }
 
+/* Normal grid, (more than 600px) */
 .grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -27,6 +28,7 @@ html {
     "footer footer footer footer footer footer footer footer footer footer";
 }
 
+/* Grid change when width is 600px or lower */
 @media screen and (max-width: 600px) {
   .grid {
     display: grid;
@@ -53,6 +55,7 @@ html {
   }
 }
 
+/* Menu icon at topbar (the visible burger menu)*/
 #menuicon {
   grid-area: topbar;
   align-self: center;
@@ -62,6 +65,7 @@ html {
   visibility: hidden;
 }
 
+/* The hamburger */
 #hamburger-menu {
   grid-area: topbar;
   align-self: center;
