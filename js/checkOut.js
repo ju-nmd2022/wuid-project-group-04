@@ -32,7 +32,29 @@ let expireHeader = document.getElementById("expireHeader");
 let cardCodeHeader = document.getElementById("cardCodeHeader");
 let agreeText = document.getElementById("agreeText");
 
+let agreeCheck = false;
+let eighteen = false;
 let gameOwned;
+
+checkbox18.addEventListener("click", function (event) {
+  if (eighteen === false) {
+    next.style.display = "block";
+    eighteen = true;
+  } else if (eighteen === true) {
+    next.style.display = "none";
+    eighteen = false;
+  }
+});
+
+agree.addEventListener("click", function (event) {
+  if (agreeCheck === false) {
+    next.style.display = "block";
+    agreeCheck = true;
+  } else if (agreeCheck === true) {
+    next.style.display = "none";
+    agreeCheck = false;
+  }
+});
 
 next.addEventListener("click", function (event) {
   if (stage === 1) {
@@ -42,6 +64,7 @@ next.addEventListener("click", function (event) {
     gamecover.style.display = "none";
     checkbox18.style.display = "none";
     text18.style.display = "none";
+    next.style.display = "none";
 
     paymentCards.style.display = "block";
     cardNumber.style.display = "block";
