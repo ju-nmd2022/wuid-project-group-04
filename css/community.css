@@ -4,6 +4,11 @@ html {
   background-color: #052a19;
 }
 
+@font-face {
+  font-family: arialRounded;
+  src: url(arlrdbd.ttf);
+}
+
 @media screen and (min-width: 1200px) {
   .grid {
     display: grid;
@@ -193,6 +198,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #home-menu:hover {
@@ -211,6 +217,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #about-menu:hover {
@@ -222,13 +229,14 @@ html {
   border: 1px solid;
   border-radius: 20px;
   border-color: #506d56;
-  padding: 7px 52.5px;
+  padding: 7px 51.5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #community-menu:hover {
@@ -247,6 +255,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #store-menu:hover {
@@ -265,6 +274,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #myGames-menu:hover {
@@ -283,6 +293,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #close-menu:hover {
@@ -318,6 +329,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #about {
@@ -330,6 +342,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #community {
@@ -341,6 +354,7 @@ html {
   place-self: center;
   align-self: center;
   color: white;
+  font-family: arialRounded;
 }
 
 #store {
@@ -353,6 +367,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #myGames {
@@ -365,6 +380,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #line1 {
@@ -481,6 +497,7 @@ html {
   font-weight: 600;
   place-self: end center;
   display: none;
+  font-family: arialRounded;
 }
 
 #password {
@@ -503,6 +520,7 @@ html {
   place-self: end center;
   text-align: center;
   display: none;
+  font-family: arialRounded;
 }
 
 #logInButton {
@@ -515,6 +533,21 @@ html {
   place-self: start center;
   display: none;
   cursor: pointer;
+  font-family: arialRounded;
+}
+
+#create {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 6;
+  grid-row-end: 6;
+  width: 100%;
+  place-self: center center;
+  text-align: center;
+  cursor: pointer;
+  font-family: arialRounded;
+  display: none;
+  color: #506d56;
 }
 
 #close {
@@ -527,6 +560,7 @@ html {
   margin-top: 20px;
   margin-right: 20px;
   display: none;
+  z-index: 1;
 }
 
 #topSection {
@@ -542,6 +576,7 @@ html {
   place-self: center center;
   text-align: center;
   font-size: 150%;
+  font-family: arialRounded;
 }
 
 #developer1Text {
@@ -550,8 +585,8 @@ html {
   width: 42rem;
   color: white;
   font-size: 120%;
-  font-family: Arial, Helvetica, sans-serif;
   margin-top: 6rem;
+  font-family: arialRounded;
 }
 
 #alienLogo {
@@ -579,6 +614,7 @@ html {
   color: white;
   margin-top: 11rem;
   margin-inline-end: 60rem;
+  font-family: arialRounded;
 }
 
 #developer2Text {
@@ -587,8 +623,8 @@ html {
   width: 42rem;
   color: white;
   font-size: 120%;
-  font-family: Arial, Helvetica, sans-serif;
   margin-top: 21rem;
+  font-family: arialRounded;
 }
 
 #cadabraLogo {
@@ -619,6 +655,7 @@ html {
   margin-top: 5rem;
   margin-inline-end: 60rem;
   margin-top: 26rem;
+  font-family: arialRounded;
 }
 
 #developer3Text {
@@ -627,8 +664,8 @@ html {
   width: 42rem;
   color: white;
   font-size: 120%;
-  font-family: Arial, Helvetica, sans-serif;
   margin-top: 36rem;
+  font-family: arialRounded;
 }
 
 #bixelLogo {
@@ -659,6 +696,7 @@ html {
   margin-top: 5rem;
   margin-inline-end: 60rem;
   margin-top: 41rem;
+  font-family: arialRounded;
 }
 
 #mostSection {
@@ -674,7 +712,7 @@ html {
   place-self: center center;
   text-align: center;
   font-size: 150%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: arialRounded;
 }
 
 #podium {
@@ -723,7 +761,7 @@ html {
   place-self: center center;
   text-align: center;
   font-size: 150%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: arialRounded;
 }
 
 #newGame1Header {
@@ -732,7 +770,7 @@ html {
   margin-inline-end: 30rem;
   margin-bottom: 28rem;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: arialRounded;
 }
 #newGame1 {
   grid-area: games;
@@ -746,7 +784,7 @@ html {
   place-self: center center;
   margin-bottom: 28rem;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: arialRounded;
 }
 #newGame2 {
   grid-area: games;
@@ -760,7 +798,7 @@ html {
   margin-inline-start: 30rem;
   margin-bottom: 28rem;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: arialRounded;
 }
 #newGame3 {
   grid-area: games;
@@ -788,6 +826,7 @@ html {
   height: 80px;
   margin-left: 1rem;
   font-size: 16pt;
+  font-family: arialRounded;
 }
 
 #contactFooter {
@@ -796,6 +835,7 @@ html {
   height: 80px;
   margin-right: 1rem;
   font-size: 16pt;
+  font-family: arialRounded;
 }
 
 /* content changes when width is 1100px or less */
@@ -1067,5 +1107,35 @@ html {
     font-size: 60pt;
     margin-top: 86rem;
     margin-inline-end: 12rem;
+  }
+
+  #loginBox {
+    grid-column-start: 2;
+    grid-column-end: 10;
+  }
+
+  #username {
+    width: 90%;
+  }
+
+  #usernameHeader {
+    grid-column-start: 3;
+  }
+
+  #password {
+    width: 90%;
+  }
+  #passwordHeader {
+    grid-column-start: 3;
+  }
+
+  #logInButton {
+    width: 70%;
+  }
+
+  #close {
+    margin-right: 20%;
+    grid-column-start: 7;
+    grid-column-end: 10;
   }
 }

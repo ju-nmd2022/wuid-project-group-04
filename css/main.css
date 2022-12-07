@@ -4,6 +4,11 @@ html {
   background-color: #052a19;
 }
 
+@font-face {
+  font-family: arialRounded;
+  src: url(arlrdbd.ttf);
+}
+
 /* Grid for when width is 1700px or more */
 @media screen and (min-width: 1700px) {
   .grid {
@@ -199,6 +204,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #home-menu:hover {
@@ -217,6 +223,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #about-menu:hover {
@@ -228,13 +235,14 @@ html {
   border: 1px solid;
   border-radius: 20px;
   border-color: #506d56;
-  padding: 7px 52.5px;
+  padding: 7px 51.5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #community-menu:hover {
@@ -253,6 +261,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #store-menu:hover {
@@ -271,6 +280,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #myGames-menu:hover {
@@ -289,6 +299,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #close-menu:hover {
@@ -389,6 +400,7 @@ html {
 
 #headerG {
   color: #fffdfd;
+  font-family: arialRounded;
   font-size: 38pt;
   grid-area: headerG;
   place-self: center center;
@@ -403,6 +415,7 @@ html {
   place-self: center;
   align-self: center;
   color: white;
+  font-family: arialRounded;
 }
 
 #about {
@@ -415,6 +428,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #community {
@@ -427,6 +441,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #store {
@@ -439,6 +454,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #myGames {
@@ -451,6 +467,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #line1 {
@@ -570,6 +587,7 @@ html {
   place-self: end center;
   display: none;
   z-index: 1;
+  font-family: arialRounded;
 }
 
 #password {
@@ -594,6 +612,7 @@ html {
   text-align: center;
   display: none;
   z-index: 1;
+  font-family: arialRounded;
 }
 
 #logInButton {
@@ -607,6 +626,22 @@ html {
   display: none;
   z-index: 1;
   cursor: pointer;
+  font-family: arialRounded;
+}
+
+#create {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 6;
+  grid-row-end: 6;
+  width: 100%;
+  place-self: center center;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+  font-family: arialRounded;
+  display: none;
+  color: #506d56;
 }
 
 #close {
@@ -651,6 +686,7 @@ html {
   height: 80px;
   margin-left: 1rem;
   font-size: 16pt;
+  font-family: arialRounded;
 }
 
 #contactFooter {
@@ -659,6 +695,7 @@ html {
   height: 80px;
   margin-right: 1rem;
   font-size: 16pt;
+  font-family: arialRounded;
 }
 
 /* Content changes for when width is 1700px or more */
@@ -1111,6 +1148,36 @@ html {
 
   #arrowRight {
     height: 20%;
+  }
+
+  #loginBox {
+    grid-column-start: 2;
+    grid-column-end: 10;
+  }
+
+  #username {
+    width: 90%;
+  }
+
+  #usernameHeader {
+    grid-column-start: 3;
+  }
+
+  #password {
+    width: 90%;
+  }
+  #passwordHeader {
+    grid-column-start: 3;
+  }
+
+  #logInButton {
+    width: 70%;
+  }
+
+  #close {
+    margin-right: 20%;
+    grid-column-start: 7;
+    grid-column-end: 10;
   }
 }
 

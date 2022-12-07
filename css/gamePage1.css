@@ -4,6 +4,11 @@ html {
   background-image: linear-gradient(#052a19, #506d56);
 }
 
+@font-face {
+  font-family: arialRounded;
+  src: url(arlrdbd.ttf);
+}
+
 @media screen and (min-width: 1000px) {
   .grid {
     display: grid;
@@ -104,7 +109,7 @@ html {
   place-self: end center;
   color: white;
   font-size: 28pt;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: arialRounded;
   font-weight: lighter;
 }
 
@@ -116,7 +121,7 @@ html {
 
 #header2 {
   color: rgb(78, 78, 78);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: arialRounded;
   font-weight: lighter;
   grid-area: rating;
   place-self: center center;
@@ -125,7 +130,7 @@ html {
 
 #genre {
   color: rgb(78, 78, 78);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: arialRounded;
   font-weight: lighter;
   grid-area: rating;
   place-self: center center;
@@ -134,7 +139,7 @@ html {
 
 #text1 {
   color: rgb(255, 255, 255);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: arialRounded;
   font-weight: lighter;
   grid-area: text1;
   place-self: start center;
@@ -143,7 +148,7 @@ html {
 
 #text2 {
   color: rgb(255, 255, 255);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: arialRounded;
   font-weight: lighter;
   grid-area: text2;
   place-self: start center;
@@ -168,6 +173,7 @@ html {
   width: 250px;
   height: 60px;
   background-color: #8bd3b3;
+  font-family: arialRounded;
 }
 
 #buynow:hover {
@@ -182,6 +188,7 @@ html {
   place-self: center center;
   color: rgb(255, 255, 255);
   display: none;
+  font-family: arialRounded;
 }
 
 #rectangle {
@@ -192,7 +199,7 @@ html {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: arialRounded;
   color: white;
   place-self: end center;
 }

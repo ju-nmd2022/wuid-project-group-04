@@ -49,6 +49,7 @@ let password = document.getElementById("password");
 let passwordHeader = document.getElementById("passwordHeader");
 let logInButton = document.getElementById("logInButton");
 let close = document.getElementById("close");
+let create = document.getElementById("create");
 
 logInButtonTop.addEventListener("click", function (event) {
   loginBox.style.display = "block";
@@ -58,6 +59,7 @@ logInButtonTop.addEventListener("click", function (event) {
   passwordHeader.style.display = "block";
   logInButton.style.display = "block";
   close.style.display = "block";
+  create.style.display = "block";
 });
 
 close.addEventListener("click", function (event) {
@@ -68,6 +70,7 @@ close.addEventListener("click", function (event) {
   passwordHeader.style.display = "none";
   logInButton.style.display = "none";
   close.style.display = "none";
+  create.style.display = "none";
 });
 
 logInButton.addEventListener("click", function (event) {
@@ -80,6 +83,7 @@ logInButton.addEventListener("click", function (event) {
   close.style.display = "none";
   logInButtonTop.style.display = "none";
   profile.style.display = "block";
+  create.style.display = "none";
 
   loggedIn = true;
   saveToSessionStorage();

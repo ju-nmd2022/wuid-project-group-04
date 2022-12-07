@@ -4,6 +4,11 @@ html {
   background-image: linear-gradient(#052a19, #506d56);
 }
 
+@font-face {
+  font-family: arialRounded;
+  src: url(arlrdbd.ttf);
+}
+
 /* Grid Area when width more than 1900px*/
 @media screen and (min-width: 1900px) {
   .grid {
@@ -202,6 +207,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #home-menu:hover {
@@ -220,6 +226,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #about-menu:hover {
@@ -231,13 +238,14 @@ html {
   border: 1px solid;
   border-radius: 20px;
   border-color: #506d56;
-  padding: 7px 52.5px;
+  padding: 7px 51.5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #community-menu:hover {
@@ -256,6 +264,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #store-menu:hover {
@@ -274,6 +283,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #myGames-menu:hover {
@@ -292,6 +302,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #close-menu:hover {
@@ -337,6 +348,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #about {
@@ -349,6 +361,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #community {
@@ -361,9 +374,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
-}
-#community2 {
-  visibility: hidden;
+  font-family: arialRounded;
 }
 
 #store {
@@ -375,6 +386,7 @@ html {
   place-self: center;
   align-self: center;
   color: white;
+  font-family: arialRounded;
 }
 
 #myGames {
@@ -387,6 +399,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #line1 {
@@ -503,6 +516,7 @@ html {
   font-weight: 600;
   place-self: end center;
   display: none;
+  font-family: arialRounded;
 }
 
 #password {
@@ -525,6 +539,7 @@ html {
   place-self: end center;
   text-align: center;
   display: none;
+  font-family: arialRounded;
 }
 
 #logInButton {
@@ -537,6 +552,21 @@ html {
   place-self: start center;
   display: none;
   cursor: pointer;
+  font-family: arialRounded;
+}
+
+#create {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 6;
+  grid-row-end: 6;
+  width: 100%;
+  place-self: center center;
+  text-align: center;
+  cursor: pointer;
+  font-family: arialRounded;
+  display: none;
+  color: #506d56;
 }
 
 #close {
@@ -555,6 +585,7 @@ html {
   grid-area: top;
   margin-top: 34px;
   color: white;
+  font-family: arialRounded;
 }
 
 #game1 {
@@ -739,13 +770,13 @@ html {
   color: white;
   margin-inline-start: 50%;
   margin-top: 2rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: arialRounded;
 }
 
 #saleConsole {
   color: rgb(175, 174, 174);
   font-size: 14pt;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: arialRounded;
   font-weight: lighter;
   grid-area: sale;
   place-self: start center;
@@ -756,7 +787,7 @@ html {
 #saleGenre {
   color: rgb(175, 174, 174);
   font-size: 14pt;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: arialRounded;
   font-weight: lighter;
   grid-area: sale;
   place-self: start center;
@@ -768,7 +799,7 @@ html {
   color: white;
   font-size: 14pt;
   width: 35%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: arialRounded;
   font-weight: lighter;
   grid-area: sale;
   place-self: start center;
@@ -787,6 +818,7 @@ html {
   height: 40px;
   margin-inline-start: 35%;
   margin-bottom: 2rem;
+  font-family: arialRounded;
 }
 #redLine {
   grid-area: sale;
@@ -817,6 +849,7 @@ html {
   width: 200px;
   height: 40px;
   background-color: #8bd3b3;
+  font-family: arialRounded;
 }
 
 #buynow:hover {
@@ -843,6 +876,7 @@ html {
   height: 80px;
   margin-left: 1rem;
   font-size: 16pt;
+  font-family: arialRounded;
 }
 
 #contactFooter {
@@ -851,6 +885,7 @@ html {
   height: 80px;
   margin-right: 1rem;
   font-size: 16pt;
+  font-family: arialRounded;
 }
 
 /* Content changes when width is 1100px or less */
@@ -989,5 +1024,34 @@ html {
   #saleText {
     width: 90%;
     text-align: center;
+  }
+  #loginBox {
+    grid-column-start: 2;
+    grid-column-end: 10;
+  }
+
+  #username {
+    width: 90%;
+  }
+
+  #usernameHeader {
+    grid-column-start: 3;
+  }
+
+  #password {
+    width: 90%;
+  }
+  #passwordHeader {
+    grid-column-start: 3;
+  }
+
+  #logInButton {
+    width: 70%;
+  }
+
+  #close {
+    margin-right: 20%;
+    grid-column-start: 7;
+    grid-column-end: 10;
   }
 }

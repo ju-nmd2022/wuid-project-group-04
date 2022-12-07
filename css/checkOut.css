@@ -4,6 +4,11 @@ html {
   margin: 0px;
 }
 
+@font-face {
+  font-family: arialRounded;
+  src: url(arlrdbd.ttf);
+}
+
 /* Grid-area when width is 800px or more */
 @media screen and (min-width: 800px) {
   .grid {
@@ -47,11 +52,32 @@ html {
   }
 }
 
+/* Grid-area when width is 600px or less */
+@media screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 8rem);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+      "back . . . ."
+      "back header header header ."
+      ". circle1 circle2 circle3 ."
+      ". gamecover gamecover gamecover ."
+      ". gamecover gamecover gamecover ."
+      ". gamecover gamecover gamecover ."
+      ". eighteen eighteen eighteen ."
+      ". . . . .";
+  }
+}
+
 #checkoutHeader {
   grid-area: header;
   place-self: center center;
   font-size: 38pt;
   color: white;
+  font-family: arialRounded;
 }
 
 #arrowLeft {
@@ -75,6 +101,7 @@ html {
   text-align: center;
   line-height: 4rem;
   font-size: 24pt;
+  font-family: arialRounded;
 }
 
 #circle2 {
@@ -88,6 +115,7 @@ html {
   text-align: center;
   line-height: 4rem;
   font-size: 24pt;
+  font-family: arialRounded;
 }
 
 #circle3 {
@@ -101,6 +129,7 @@ html {
   text-align: center;
   line-height: 4rem;
   font-size: 24pt;
+  font-family: arialRounded;
 }
 
 #gamecover {
@@ -119,7 +148,7 @@ html {
   grid-area: eighteen;
   place-self: start center;
   color: rgba(245, 245, 245, 0.788);
-  margin-inline-end: 2rem;
+  margin-inline-end: 3rem;
 }
 
 #checkbox18 {
@@ -131,12 +160,14 @@ html {
 }
 
 #next {
-  place-self: center end;
+  place-self: end end;
   grid-area: eighteen;
   height: 40px;
   width: 160px;
   background-color: white;
   border: 0px;
+  font-family: arialRounded;
+  font-weight: lighter;
 }
 
 #next:hover {
@@ -146,13 +177,15 @@ html {
 }
 
 #back {
-  place-self: center start;
+  place-self: end start;
   grid-area: eighteen;
   height: 40px;
   width: 160px;
   background-color: white;
   border: 0px;
   display: none;
+  font-family: arialRounded;
+  font-weight: lighter;
 }
 
 #back:hover {
@@ -178,6 +211,7 @@ html {
   width: 300px;
   display: none;
   text-decoration: none;
+  font-family: arialRounded;
 }
 
 #myGamesButton:hover {
@@ -186,28 +220,129 @@ html {
   cursor: pointer;
 }
 
+#line1 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  height: 1px;
+  width: 100%;
+  background-color: #727272;
+  place-self: center center;
+}
+#line2 {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  height: 1px;
+  width: 100%;
+  background-color: #727272;
+  place-self: center center;
+}
+
+#paymentCards {
+  grid-area: gamecover;
+  height: 3rem;
+  place-self: start center;
+  margin-top: 4rem;
+  display: none;
+}
+
+#cardNumber {
+  grid-area: gamecover;
+  place-self: start center;
+  height: 20px;
+  width: 40%;
+  margin-top: 12rem;
+  display: none;
+}
+
+#cardNumberHeader {
+  grid-area: gamecover;
+  place-self: start center;
+  color: white;
+  font-size: 12pt;
+  height: 20px;
+  width: 40%;
+  margin-top: 10rem;
+  display: none;
+  font-family: arialRounded;
+}
+
+#expire {
+  grid-area: gamecover;
+  place-self: start center;
+  height: 20px;
+  width: 40%;
+  margin-top: 19rem;
+  display: none;
+}
+
+#expireHeader {
+  grid-area: gamecover;
+  place-self: start center;
+  color: white;
+  font-size: 12pt;
+  height: 20px;
+  width: 40%;
+  margin-top: 17rem;
+  display: none;
+  font-family: arialRounded;
+}
+
+#cardCode {
+  grid-area: gamecover;
+  place-self: start center;
+  height: 20px;
+  width: 40%;
+  margin-top: 26rem;
+  display: none;
+}
+
+#cardCodeHeader {
+  grid-area: gamecover;
+  place-self: start center;
+  color: white;
+  font-size: 12pt;
+  height: 20px;
+  width: 40%;
+  margin-top: 24rem;
+  display: none;
+  font-family: arialRounded;
+}
+
+#agree {
+  grid-area: gamecover;
+  place-self: start center;
+  margin-top: 31.5rem;
+  margin-inline-end: 14rem;
+  display: none;
+}
+
+#agreeText {
+  grid-area: gamecover;
+  place-self: start center;
+  margin-top: 31rem;
+  margin-inline-end: -6rem;
+  color: white;
+  font-size: 10pt;
+  display: none;
+}
+
 /* Content changes for width 800px or less */
 @media screen and (max-width: 800px) {
   #line1 {
     grid-column-start: 2;
     grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    height: 1px;
     width: 50%;
-    background-color: #727272;
-    place-self: center center;
   }
   #line2 {
     grid-column-start: 3;
     grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    height: 1px;
     width: 50%;
-    background-color: #727272;
-    place-self: center center;
   }
+
   #next {
     height: 25px;
     width: 90px;
@@ -216,210 +351,63 @@ html {
     height: 25px;
     width: 90px;
   }
+
+  #paymentCards {
+    height: 2rem;
+    margin-top: 2rem;
+  }
+
+  #cardNumber {
+    height: 15px;
+    width: 60%;
+    margin-top: 7.5rem;
+  }
+
+  #cardNumberHeader {
+    width: 60%;
+    margin-top: 6rem;
+  }
+
+  #expire {
+    height: 15px;
+    width: 60%;
+    margin-top: 11.5rem;
+  }
+  #expireHeader {
+    width: 60%;
+    margin-top: 10rem;
+  }
+
+  #cardCode {
+    height: 15px;
+    width: 60%;
+    margin-top: 15.5rem;
+  }
+
+  #cardCodeHeader {
+    height: 20px;
+    width: 60%;
+    margin-top: 14rem;
+  }
+
+  #agree {
+    margin-top: 21.5rem;
+  }
+
+  #agreeText {
+    margin-top: 21rem;
+  }
 }
 
-/* Content changes for width 800px or more */
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 600px) {
   #line1 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    height: 1px;
-    width: 100%;
-    background-color: #727272;
-    place-self: center center;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 60%;
   }
   #line2 {
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    height: 1px;
-    width: 100%;
-    background-color: #727272;
-    place-self: center center;
-  }
-
-  #next {
-    place-self: end end;
-  }
-
-  #back {
-    place-self: end start;
-  }
-
-  #paymentCards {
-    grid-area: gamecover;
-    height: 3rem;
-    place-self: start center;
-    margin-top: 4rem;
-    display: none;
-  }
-
-  #cardNumber {
-    grid-area: gamecover;
-    place-self: start center;
-    height: 20px;
-    width: 40%;
-    margin-top: 12rem;
-    display: none;
-  }
-
-  #cardNumberHeader {
-    grid-area: gamecover;
-    place-self: start center;
-    color: white;
-    font-size: 12pt;
-    height: 20px;
-    width: 40%;
-    margin-top: 10rem;
-    display: none;
-  }
-
-  #expire {
-    grid-area: gamecover;
-    place-self: start center;
-    height: 20px;
-    width: 40%;
-    margin-top: 19rem;
-    display: none;
-  }
-
-  #expireHeader {
-    grid-area: gamecover;
-    place-self: start center;
-    color: white;
-    font-size: 12pt;
-    height: 20px;
-    width: 40%;
-    margin-top: 17rem;
-    display: none;
-  }
-
-  #cardCode {
-    grid-area: gamecover;
-    place-self: start center;
-    height: 20px;
-    width: 40%;
-    margin-top: 26rem;
-    display: none;
-  }
-
-  #cardCodeHeader {
-    grid-area: gamecover;
-    place-self: start center;
-    color: white;
-    font-size: 12pt;
-    height: 20px;
-    width: 40%;
-    margin-top: 24rem;
-    display: none;
-  }
-
-  #agree {
-    grid-area: gamecover;
-    place-self: start center;
-    margin-top: 31.5rem;
-    margin-inline-end: 14rem;
-    display: none;
-  }
-
-  #agreeText {
-    grid-area: gamecover;
-    place-self: start center;
-    margin-top: 31rem;
-    margin-inline-end: -6rem;
-    color: white;
-    font-size: 10pt;
-    display: none;
-  }
-}
-
-/* Content changes for width 800px or less */
-@media screen and (max-width: 800px) {
-  #paymentCards {
-    grid-area: gamecover;
-    height: 2rem;
-    place-self: start center;
-    margin-top: 2rem;
-    display: none;
-  }
-
-  #cardNumber {
-    grid-area: gamecover;
-    place-self: start center;
-    height: 15px;
-    width: 40%;
-    margin-top: 7.5rem;
-    display: none;
-  }
-
-  #cardNumberHeader {
-    grid-area: gamecover;
-    place-self: start center;
-    color: white;
-    font-size: 12pt;
-    height: 20px;
-    width: 40%;
-    margin-top: 6rem;
-    display: none;
-  }
-
-  #expire {
-    grid-area: gamecover;
-    place-self: start center;
-    height: 15px;
-    width: 40%;
-    margin-top: 11.5rem;
-    display: none;
-  }
-
-  #expireHeader {
-    grid-area: gamecover;
-    place-self: start center;
-    color: white;
-    font-size: 12pt;
-    width: 40%;
-    margin-top: 10rem;
-    display: none;
-  }
-
-  #cardCode {
-    grid-area: gamecover;
-    place-self: start center;
-    height: 15px;
-    width: 40%;
-    margin-top: 15.5rem;
-    display: none;
-  }
-
-  #cardCodeHeader {
-    grid-area: gamecover;
-    place-self: start center;
-    color: white;
-    font-size: 12pt;
-    height: 20px;
-    width: 40%;
-    margin-top: 14rem;
-    display: none;
-  }
-
-  #agree {
-    grid-area: gamecover;
-    place-self: start center;
-    margin-top: 21.5rem;
-    margin-inline-end: 10rem;
-    display: none;
-  }
-
-  #agreeText {
-    grid-area: gamecover;
-    place-self: start center;
-    margin-top: 21rem;
-    margin-inline-end: -9rem;
-    color: white;
-    font-size: 10pt;
-    display: none;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 60%;
   }
 }

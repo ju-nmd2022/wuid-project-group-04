@@ -4,79 +4,32 @@ html {
   background-image: linear-gradient(#052a19, #506d56);
 }
 
-@media screen and (min-width: 1100px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(14, 8rem);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-template-areas:
-      "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
-      ". . . . . . . . . ."
-      ". owned owned owned owned owned . . . ."
-      ". game1 game1 game1 . . . . . ."
-      ". game1 game1 game1 . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      "footer footer footer footer footer footer footer footer footer footer"
-      "footer footer footer footer footer footer footer footer footer footer";
-  }
+@font-face {
+  font-family: arialRounded;
+  src: url(arlrdbd.ttf);
 }
 
-@media screen and (min-width: 600px) and (max-width: 1100px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(14, 8rem);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-template-areas:
-      "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
-      ". . . . . . . . . ."
-      ". owned owned owned owned owned . . . ."
-      ". game1 game1 game1 . . . . . ."
-      ". game1 game1 game1 . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      "footer footer footer footer footer footer footer footer footer footer"
-      "footer footer footer footer footer footer footer footer footer footer";
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(14, 8rem);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-template-areas:
-      "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
-      ". . . . . . . . . ."
-      ". owned owned owned owned owned . . . ."
-      ". game1 game1 game1 game1 game1 game1 game1 game1 ."
-      ". game1 game1 game1 game1 game1 game1 game1 game1 ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      ". . . . . . . . . ."
-      "footer footer footer footer footer footer footer footer footer footer"
-      "footer footer footer footer footer footer footer footer footer footer";
-  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(14, 8rem);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas:
+    "topbar topbar topbar topbar topbar topbar topbar topbar topbar topbar"
+    ". . . . . . . . . ."
+    ". owned owned owned owned owned owned owned owned ."
+    ". game1 game1 game1 . . . . . ."
+    ". game1 game1 game1 . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    "footer footer footer footer footer footer footer footer footer footer"
+    "footer footer footer footer footer footer footer footer footer footer";
 }
 
 #menuicon {
@@ -115,6 +68,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #home-menu:hover {
@@ -133,6 +87,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #about-menu:hover {
@@ -144,13 +99,14 @@ html {
   border: 1px solid;
   border-radius: 20px;
   border-color: #506d56;
-  padding: 7px 52.5px;
+  padding: 7px 51.5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #community-menu:hover {
@@ -169,6 +125,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #store-menu:hover {
@@ -187,6 +144,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #myGames-menu:hover {
@@ -205,6 +163,7 @@ html {
   font-size: 16px;
   margin: 6px 2px;
   cursor: pointer;
+  font-family: arialRounded;
 }
 
 #close-menu:hover {
@@ -241,6 +200,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #about {
@@ -253,6 +213,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #community {
@@ -265,6 +226,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #store {
@@ -277,6 +239,7 @@ html {
   align-self: center;
   font-weight: bold;
   color: black;
+  font-family: arialRounded;
 }
 
 #myGames {
@@ -288,6 +251,7 @@ html {
   place-self: center;
   align-self: center;
   color: white;
+  font-family: arialRounded;
 }
 
 #line1 {
@@ -403,6 +367,7 @@ html {
   font-weight: 600;
   place-self: end center;
   display: none;
+  font-family: arialRounded;
 }
 
 #password {
@@ -425,6 +390,7 @@ html {
   place-self: end center;
   text-align: center;
   display: none;
+  font-family: arialRounded;
 }
 
 #logInButton {
@@ -437,6 +403,21 @@ html {
   place-self: start center;
   display: none;
   cursor: pointer;
+  font-family: arialRounded;
+}
+
+#create {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 6;
+  grid-row-end: 6;
+  width: 100%;
+  place-self: center center;
+  text-align: center;
+  cursor: pointer;
+  font-family: arialRounded;
+  display: none;
+  color: #506d56;
 }
 
 #close {
@@ -456,6 +437,7 @@ html {
   color: white;
   font-size: 18pt;
   font-weight: 500;
+  font-family: arialRounded;
 }
 
 #ownedLine {
@@ -478,20 +460,6 @@ html {
   display: none;
 }
 
-#next {
-  grid-area: next;
-  height: 30px;
-  width: 6rem;
-  place-self: center end;
-  background-color: white;
-  border: 0px;
-  display: none;
-}
-
-#next:hover {
-  background-color: #394e3e;
-}
-
 #footerSection {
   grid-area: footer;
   background-color: #506d56;
@@ -510,6 +478,7 @@ html {
   height: 80px;
   margin-left: 1rem;
   font-size: 16pt;
+  font-family: arialRounded;
 }
 
 #contactFooter {
@@ -518,6 +487,7 @@ html {
   height: 80px;
   margin-right: 1rem;
   font-size: 16pt;
+  font-family: arialRounded;
 }
 
 /* content changes when width is 1100px or less */
@@ -600,5 +570,35 @@ html {
 
   #logoText {
     display: none;
+  }
+
+  #loginBox {
+    grid-column-start: 2;
+    grid-column-end: 10;
+  }
+
+  #username {
+    width: 90%;
+  }
+
+  #usernameHeader {
+    grid-column-start: 3;
+  }
+
+  #password {
+    width: 90%;
+  }
+  #passwordHeader {
+    grid-column-start: 3;
+  }
+
+  #logInButton {
+    width: 70%;
+  }
+
+  #close {
+    margin-right: 20%;
+    grid-column-start: 7;
+    grid-column-end: 10;
   }
 }
