@@ -92,3 +92,8 @@ logInButton.addEventListener("click", function (event) {
   loggedIn = true;
   saveToSessionStorage();
 });
+
+// No code is copied straight from internet,
+// but a lot of the code is made with help to understand
+// logics and find the right "commands" from lecture slides,
+// lecture videos and also from W3Schools.com
