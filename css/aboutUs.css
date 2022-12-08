@@ -1,4 +1,3 @@
-/* Body Start Settings */
 body,
 html {
   margin: 0px;
@@ -62,7 +61,6 @@ html {
   }
 }
 
-/* Menu icon at topbar (the visible burger menu)*/
 #menuicon {
   grid-area: topbar;
   align-self: center;
@@ -72,7 +70,6 @@ html {
   visibility: hidden;
 }
 
-/* The hamburger menu opener*/
 #hamburger-menu {
   grid-area: topbar;
   align-self: center;
@@ -81,7 +78,6 @@ html {
   display: none;
 }
 
-/* The "menu list background */
 #menu-list {
   background-color: #506d56;
   margin-top: 81px;
@@ -89,7 +85,6 @@ html {
   height: 278px;
 }
 
-/* The home option in the menu list */
 #home-menu {
   background-color: white;
   border: 1px solid;
@@ -105,12 +100,10 @@ html {
   font-family: arialRounded;
 }
 
-/* happens when you hover the home option */
 #home-menu:hover {
   background-color: #394e3e;
 }
 
-/* The About Us option in the menu list */
 #about-menu {
   background-color: #ffffff;
   border: 1px solid;
@@ -126,12 +119,10 @@ html {
   font-family: arialRounded;
 }
 
-/* Happens when you hover the about us option */
 #about-menu:hover {
   background-color: #394e3e;
 }
 
-/* The community option in the menu list */
 #community-menu {
   background-color: #ffffff;
   border: 1px solid;
@@ -147,12 +138,10 @@ html {
   font-family: arialRounded;
 }
 
-/* Happens when you hover the community option */
 #community-menu:hover {
   background-color: #394e3e;
 }
 
-/* The store Menu option */
 #store-menu {
   background-color: #ffffff;
   border: 1px solid;
@@ -168,12 +157,10 @@ html {
   font-family: arialRounded;
 }
 
-/* Happens when you hover the store menu option */
 #store-menu:hover {
   background-color: #394e3e;
 }
 
-/* My games menu option */
 #myGames-menu {
   background-color: #ffffff;
   border: 1px solid;
@@ -189,12 +176,10 @@ html {
   font-family: arialRounded;
 }
 
-/* happens when you hover my games option */
 #myGames-menu:hover {
   background-color: #394e3e;
 }
 
-/* Close menu option */
 #close-menu {
   background-color: #ffffff;
   border: 1px solid;
@@ -210,12 +195,10 @@ html {
   font-family: arialRounded;
 }
 
-/* Happens when you hover the close option */
 #close-menu:hover {
   background-color: #394e3e;
 }
 
-/* Logo at top left corner */
 #logo {
   grid-area: topbar;
   height: 70%;
@@ -223,7 +206,6 @@ html {
   margin-left: 1rem;
 }
 
-/* The text after the logo (ult Studios) */
 #logoText {
   grid-area: topbar;
   place-self: left center;
@@ -232,13 +214,11 @@ html {
   font-weight: 500;
 }
 
-/* The topbar (the background color) */
 #topbar {
   background-color: #506d56;
   grid-area: topbar;
 }
 
-/* The Home link when screen wide */
 #home {
   grid-column-start: 3;
   grid-column-end: 5;
@@ -252,7 +232,6 @@ html {
   font-family: arialRounded;
 }
 
-/* The about us link when screen wide */
 #about {
   grid-column-start: 4;
   grid-column-end: 6;
@@ -265,7 +244,6 @@ html {
   font-family: arialRounded;
 }
 
-/* The community link when screen wide */
 #community {
   grid-column-start: 5;
   grid-column-end: 7;
@@ -279,7 +257,6 @@ html {
   font-family: arialRounded;
 }
 
-/* The store when screen wide */
 #store {
   grid-column-start: 6;
   grid-column-end: 8;
@@ -293,7 +270,6 @@ html {
   font-family: arialRounded;
 }
 
-/* My Games link when screen wide */
 #myGames {
   grid-column-start: 7;
   grid-column-end: 9;
@@ -307,7 +283,6 @@ html {
   font-family: arialRounded;
 }
 
-/* Line between the menu options at topbar for wide screen */
 #line1 {
   grid-column-start: 3;
   grid-column-end: 4;
@@ -320,7 +295,6 @@ html {
   align-self: center;
 }
 
-/* Line between the menu options at topbar for wide screen */
 #line2 {
   grid-column-start: 4;
   grid-column-end: 5;
@@ -333,7 +307,6 @@ html {
   align-self: center;
 }
 
-/* Line between the menu options at topbar for wide screen */
 #line3 {
   grid-column-start: 5;
   grid-column-end: 6;
@@ -346,7 +319,6 @@ html {
   align-self: center;
 }
 
-/* Line between the menu options at topbar for wide screen */
 #line4 {
   grid-column-start: 6;
   grid-column-end: 7;
@@ -359,7 +331,6 @@ html {
   align-self: center;
 }
 
-/* Line between the menu options at topbar for wide screen */
 #line5 {
   grid-column-start: 7;
   grid-column-end: 8;
@@ -372,7 +343,6 @@ html {
   align-self: center;
 }
 
-/* Line between the menu options at topbar for wide screen */
 #line6 {
   grid-column-start: 8;
   grid-column-end: 9;
@@ -385,7 +355,6 @@ html {
   align-self: center;
 }
 
-/* The profile picture at top right corner when logged in */
 #profile {
   grid-area: topbar;
   height: 30%;
@@ -394,7 +363,6 @@ html {
   display: none;
 }
 
-/* The log in icon at top right corner when not logged in */
 #logInButtonTop {
   grid-area: topbar;
   height: 40%;
@@ -403,7 +371,6 @@ html {
   cursor: pointer;
 }
 
-/* The background for the log in window */
 #loginBox {
   grid-column-start: 4;
   grid-column-end: 8;
@@ -413,7 +380,6 @@ html {
   display: none;
 }
 
-/* The username field input box */
 #username {
   grid-column-start: 4;
   grid-column-end: 8;
@@ -425,7 +391,6 @@ html {
   display: none;
 }
 
-/* The username text above the input box */
 #usernameHeader {
   grid-column-start: 4;
   grid-column-end: 8;
@@ -438,7 +403,6 @@ html {
   font-family: arialRounded;
 }
 
-/* Password input box */
 #password {
   grid-column-start: 4;
   grid-column-end: 8;
@@ -450,7 +414,6 @@ html {
   display: none;
 }
 
-/* password header above the input box */
 #passwordHeader {
   grid-column-start: 4;
   grid-column-end: 8;
@@ -464,7 +427,6 @@ html {
   font-family: arialRounded;
 }
 
-/* the button to log in, in the log in window*/
 #logInButton {
   grid-column-start: 4;
   grid-column-end: 8;
@@ -478,7 +440,6 @@ html {
   font-family: arialRounded;
 }
 
-/* create account text in the log in window */
 #create {
   grid-column-start: 4;
   grid-column-end: 8;
@@ -493,7 +454,6 @@ html {
   color: #506d56;
 }
 
-/* to close the log in window */
 #close {
   grid-column-start: 7;
   grid-column-end: 7;
@@ -689,6 +649,7 @@ html {
   }
 }
 
+/* Content changes when width is 800px  or less */
 @media screen and (max-width: 800px) {
   #abouttext {
     width: 80%;
@@ -709,6 +670,7 @@ html {
   }
 }
 
+/* Content changes when width is 600px  or less */
 @media screen and (max-width: 600px) {
   #copyright {
     font-size: 10pt;

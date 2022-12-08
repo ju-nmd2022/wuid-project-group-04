@@ -7,6 +7,7 @@ function readFromSessionStorage() {
   loggedIn = sessionStorage.loggedIn === "true";
 }
 
+//check if you are logged in when you load the window
 window.addEventListener("load", function () {
   readFromSessionStorage();
 

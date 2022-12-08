@@ -4,11 +4,13 @@ html {
   background-image: linear-gradient(#052a19, #506d56);
 }
 
+/* FontFace Arial Rounded */
 @font-face {
   font-family: arialRounded;
   src: url(arlrdbd.ttf);
 }
 
+/* grid area when width is 1000px or more */
 @media screen and (min-width: 1000px) {
   .grid {
     display: grid;
@@ -33,6 +35,7 @@ html {
   }
 }
 
+/* grid area when width is 1000px or less */
 @media screen and (max-width: 1000px) {
   .grid {
     display: grid;
@@ -58,6 +61,7 @@ html {
   }
 }
 
+/* grid area when width is 600px or less */
 @media screen and (max-width: 600px) {
   .grid {
     display: grid;
@@ -204,6 +208,7 @@ html {
   place-self: end center;
 }
 
+/* content changes when width is 1000px or less */
 @media screen and (max-width: 1000px) {
   #gameCover {
     height: 80%;
@@ -220,6 +225,7 @@ html {
   }
 }
 
+/* content changes when width is 600px or less */
 @media screen and (max-width: 600px) {
   #gameCover {
     height: 500px;

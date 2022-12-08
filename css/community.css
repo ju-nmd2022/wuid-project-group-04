@@ -4,11 +4,13 @@ html {
   background-color: #052a19;
 }
 
+/* FontFace Arial Rounded */
 @font-face {
   font-family: arialRounded;
   src: url(arlrdbd.ttf);
 }
 
+/* Grid-area when width is 1200px or more */
 @media screen and (min-width: 1200px) {
   .grid {
     display: grid;
@@ -48,6 +50,7 @@ html {
   }
 }
 
+/* Grid-area when width is 1200px or less */
 @media screen and (max-width: 1200px) {
   .grid {
     display: grid;
@@ -104,6 +107,7 @@ html {
   }
 }
 
+/* Grid-area when width is 600px or less */
 @media screen and (max-width: 600px) {
   .grid {
     display: grid;
@@ -838,71 +842,7 @@ html {
   font-family: arialRounded;
 }
 
-/* content changes when width is 1100px or less */
-@media screen and (max-width: 1100px) {
-  #home {
-    visibility: hidden;
-  }
-
-  #about {
-    visibility: hidden;
-  }
-
-  #community {
-    visibility: hidden;
-  }
-
-  #store {
-    visibility: hidden;
-  }
-
-  #myGames {
-    visibility: hidden;
-  }
-
-  #line1 {
-    visibility: hidden;
-  }
-
-  #line2 {
-    visibility: hidden;
-  }
-  #line3 {
-    visibility: hidden;
-  }
-  #line4 {
-    visibility: hidden;
-  }
-
-  #line5 {
-    visibility: hidden;
-  }
-  #line6 {
-    visibility: hidden;
-  }
-  #logo {
-    grid-area: topbar;
-    height: 70%;
-    align-self: center;
-    margin-left: 5rem;
-  }
-  #logoText {
-    margin-left: 11.5rem;
-  }
-
-  #menuicon {
-    visibility: visible;
-  }
-
-  #topheader {
-    grid-area: top;
-    width: 100%;
-    height: 100%;
-    background-color: #d9d9d9;
-    box-shadow: 2px 2px 4px #020e08;
-  }
-}
-
+/* content changes when width is 1200 or less */
 @media screen and (max-width: 1200px) {
   #developer1Text {
     width: 80%;
@@ -1045,6 +985,64 @@ html {
   }
 }
 
+/* content changes when width is 1100px or less */
+@media screen and (max-width: 1100px) {
+  #home {
+    visibility: hidden;
+  }
+
+  #about {
+    visibility: hidden;
+  }
+
+  #community {
+    visibility: hidden;
+  }
+
+  #store {
+    visibility: hidden;
+  }
+
+  #myGames {
+    visibility: hidden;
+  }
+
+  #line1 {
+    visibility: hidden;
+  }
+
+  #line2 {
+    visibility: hidden;
+  }
+  #line3 {
+    visibility: hidden;
+  }
+  #line4 {
+    visibility: hidden;
+  }
+
+  #line5 {
+    visibility: hidden;
+  }
+  #line6 {
+    visibility: hidden;
+  }
+  #logo {
+    grid-area: topbar;
+    height: 70%;
+    align-self: center;
+    margin-left: 5rem;
+  }
+  #logoText {
+    margin-left: 11.5rem;
+  }
+
+  #menuicon {
+    visibility: visible;
+  }
+}
+
+/* content changes when width is 600 or less */
 @media screen and (max-width: 600px) {
   #copyright {
     font-size: 10pt;

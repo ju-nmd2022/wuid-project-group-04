@@ -4,11 +4,13 @@ html {
   background-image: linear-gradient(#052a19, #506d56);
 }
 
+/* FontFace Arial Rounded */
 @font-face {
   font-family: arialRounded;
   src: url(arlrdbd.ttf);
 }
 
+/* Grid area */
 .grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -547,6 +549,7 @@ html {
   }
 }
 
+/* content changes when width is 800px or less */
 @media screen and (max-width: 800px) {
   #contactFooter {
     font-size: 12pt;
@@ -556,6 +559,7 @@ html {
   }
 }
 
+/* content changes when width is 600px or less */
 @media screen and (max-width: 600px) {
   #copyright {
     font-size: 10pt;

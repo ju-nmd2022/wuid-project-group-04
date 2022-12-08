@@ -36,6 +36,7 @@ let agreeCheck = false;
 let eighteen = false;
 let gameOwned;
 
+// Only shows next when you check you are 18+
 checkbox18.addEventListener("click", function (event) {
   if (eighteen === false) {
     next.style.display = "block";
@@ -46,6 +47,7 @@ checkbox18.addEventListener("click", function (event) {
   }
 });
 
+// Only shows next when you check you agree to our terms
 agree.addEventListener("click", function (event) {
   if (agreeCheck === false) {
     next.style.display = "block";
@@ -56,6 +58,7 @@ agree.addEventListener("click", function (event) {
   }
 });
 
+//Next button
 next.addEventListener("click", function (event) {
   if (stage === 1) {
     back.style.display = "block";
@@ -103,6 +106,8 @@ next.addEventListener("click", function (event) {
     saveToSessionStorage();
   }
 });
+
+//back button
 back.addEventListener("click", function (event) {
   if (stage === 2) {
     back.style.display = "none";
